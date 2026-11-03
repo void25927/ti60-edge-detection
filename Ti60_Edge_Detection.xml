@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<efx:project name="Ti60_Edge_Detection" description="SC2210中央裁剪灰度与Sobel边缘检测" last_change="1793273847" sw_version="2023.2.307.5.10" last_run_state="pass" last_run_flow="bitstream" config_result_in_sync="sync" design_ood="sync" place_ood="sync" route_ood="sync" xmlns:efx="http://www.efinixinc.com/enf_proj" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/enf_proj enf_proj.xsd">
+    <efx:device_info>
+        <efx:family name="Titanium"/>
+        <efx:device name="Ti60F225"/>
+        <efx:timing_model name="C4"/>
+    </efx:device_info>
+    <efx:design_info def_veri_version="verilog_2k" def_vhdl_version="vhdl_2008">
+        <efx:top_module name="Ti60_top"/>
+        <efx:design_file name="src/paired/inspection_display_features.v" version="default" library="default"/>
+        <efx:design_file name="src/paired/inspection_pair_commit.v" version="default" library="default"/>
+        <efx:design_file name="src/paired/paired_feature_learning.v" version="default" library="default"/>
+        <efx:design_file name="src/paired/paired_frame_reader.v" version="default" library="default"/>
+        <efx:design_file name="src/paired/paired_frame_writer.v" version="default" library="default"/>
+        <efx:design_file name="src/paired/paired_frame_writer_stream.v" version="default" library="default"/>
+        <efx:design_file name="src/paired/paired_video_arbiter.v" version="default" library="default"/>
+        <efx:design_file name="src/paired/paired_video_buffer.v" version="default" library="default"/>
+        <efx:design_file name="src/paired/rgb888_frame_pack.v" version="default" library="default"/>
+        <efx:design_file name="src/paired/rgb888_frame_unpack.v" version="default" library="default"/>
+        <efx:design_file name="src/ui/vision_ui_renderer.v" version="default" library="default"/>
+        <efx:design_file name="src/ui/hdmi_fps_counter.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_edge_stream.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_edge_runs.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_edge_target.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_edge_compare.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_edge_system.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_edge_formal_path.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_object_verdict.v" version="default" library="default"/>
+        <efx:design_file name="src/control/feature_menu_controller.v" version="default" library="default"/>
+        <efx:design_file name="src/control/video_async_fifo.v" version="default" library="default"/>
+        <efx:design_file name="src/control/video_control_mailbox.v" version="default" library="default"/>
+        <efx:design_file name="src/control/video_reset_sync.v" version="default" library="default"/>
+        <efx:design_file name="src/axi/video_history_manager.v" version="default" library="default"/>
+        <efx:design_file name="src/axi/video_snapshot_arbiter.v" version="default" library="default"/>
+        <efx:design_file name="src/ui/snapshot_capture.v" version="default" library="default"/>
+        <efx:design_file name="src/ui/snapshot_axi_writer.v" version="default" library="default"/>
+        <efx:design_file name="src/ui/snapshot_axi_reader.v" version="default" library="default"/>
+        <efx:design_file name="src/ui/snapshot_line_overlay.v" version="default" library="default"/>
+        <efx:design_file name="src/ui/snapshot_system.v" version="default" library="default"/>
+        <efx:design_file name="src/control/key_debounce.v" version="default" library="default"/>
+        <efx:design_file name="src/control/exboard_control.v" version="default" library="default"/>
+        <efx:design_file name="Ti60_top.v" version="default" library="default"/>
+        <efx:design_file name="src/lcd_para.v" version="default" library="default"/>
+        <efx:design_file name="src/lcd_driver.v" version="default" library="default"/>
+        <efx:design_file name="src/axi/AXI4_AWARMux.v" version="default" library="default"/>
+        <efx:design_file name="src/axi/ddr_frame_manager.v" version="default" library="default"/>
+        <efx:design_file name="src/axi/axi4_ctrl.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/VIP_RAW8_RGB888.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/mipi_center_crop_32.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/Line_Shift_RAM_8Bit.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/VIP_Matrix_Generate_3X3_8Bit.v" version="default" library="default"/>
+        <efx:design_file name="src/cmos_i2c/i2c_timing_ctrl_reg16_dat8_wronly.v" version="default" library="default"/>
+        <efx:design_file name="src/cmos_i2c/I2C_SC2210_19201080_4Lanes_Config.v" version="default" library="default"/>
+        <efx:design_file name="pri/mipi/MIPIRx4LaneFre.v" version="default" library="default"/>
+        <efx:design_file name="src/hdmi_ip/rgb2dvi.v" version="default" library="default"/>
+        <efx:design_file name="src/hdmi_ip/tmds_channel.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/rgb888_to_gray.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/video_auto_levels.v" version="default" library="default"/>
+        <efx:design_file name="src/cmos_i2c/i2c_register_writer.v" version="default" library="default"/>
+        <efx:design_file name="src/cmos_i2c/sc2210_auto_exposure.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/gray_3x3_window.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/gray_edge_display.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/sobel_3x3.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/gradient_threshold.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/median_3x3.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/gaussian_3x3.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/canny_nms.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/canny_double_threshold.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/canny_hysteresis.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/canny_edge_pipeline.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/edge_overlay.v" version="default" library="default"/>
+        <efx:design_file name="src/control/debounce.v" version="default" library="default"/>
+        <efx:design_file name="src/control/key_event_controller.v" version="default" library="default"/>
+        <efx:design_file name="src/control/system_mode_controller.v" version="default" library="default"/>
+        <efx:design_file name="src/control/threshold_controller.v" version="default" library="default"/>
+        <efx:design_file name="src/ui/font_rom_8x16.v" version="default" library="default"/>
+        <efx:design_file name="src/ui/video_ui_overlay.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/edge_video_pipeline.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_foreground.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_run_encoder.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_components.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_geometry.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_angle_sincos.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_object_tracker.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_axial_profile.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_axial_compare.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_axial_compare_ram.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_single_selector.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_axial_frontend.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_axial_manager.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_axial_system.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_rgb_adapter.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_result_history.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_user_control.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_video_retime.v" version="default" library="default"/>
+        <efx:design_file name="src/inspection/inspection_formal_path.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/binary_morphology_3x3.v" version="default" library="default"/>
+        <efx:design_file name="src/isp/edge_morphology_pipeline.v" version="default" library="default"/>
+        <efx:design_file name="src/ui/video_ui_metrics.v" version="default" library="default"/>
+        <efx:top_vhdl_arch name=""/>
+    </efx:design_info>
+    <efx:constraint_info>
+        <efx:sdc_file name="Ti60_Edge_Detection.pt.sdc"/>
+        <efx:inter_file name=""/>
+    </efx:constraint_info>
+    <efx:sim_info/>
+    <efx:misc_info/>
+    <efx:ip_info>
+        <efx:ip instance_name="DdrCtrl" path="ip/DdrCtrl/settings.json">
+            <efx:ip_src_file name="DdrCtrl.v"/>
+        </efx:ip>
+        <efx:ip instance_name="R0_FIFO_8" path="ip/R0_FIFO_8/settings.json">
+            <efx:ip_src_file name="R0_FIFO_8.v"/>
+        </efx:ip>
+        <efx:ip instance_name="W0_FIFO_32" path="ip/W0_FIFO_32/settings.json">
+            <efx:ip_src_file name="W0_FIFO_32.v"/>
+        </efx:ip>
+    </efx:ip_info>
+    <efx:synthesis tool_name="efx_map">
+        <efx:param name="work_dir" value="work_syn" value_type="e_string"/>
+        <efx:param name="write_efx_verilog" value="on" value_type="e_bool"/>
+        <efx:param name="mode" value="speed" value_type="e_option"/>
+        <efx:param name="max_ram" value="-1" value_type="e_integer"/>
+        <efx:param name="max_mult" value="-1" value_type="e_integer"/>
+        <efx:param name="infer-clk-enable" value="3" value_type="e_option"/>
+        <efx:param name="infer-sync-set-reset" value="1" value_type="e_option"/>
+        <efx:param name="fanout-limit" value="0" value_type="e_integer"/>
+        <efx:param name="seq_opt" value="0" value_type="e_option"/>
+        <efx:param name="retiming" value="0" value_type="e_option"/>
+        <efx:param name="dsp-mac-packing" value="1" value_type="e_option"/>
+        <efx:param name="dsp-input-regs-packing" value="0" value_type="e_option"/>
+        <efx:param name="dsp-output-regs-packing" value="0" value_type="e_option"/>
+        <efx:param name="bram_output_regs_packing" value="1" value_type="e_option"/>
+        <efx:param name="blast_const_operand_adders" value="1" value_type="e_option"/>
+        <efx:param name="operator-sharing" value="0" value_type="e_option"/>
+        <efx:param name="optimize-adder-tree" value="0" value_type="e_option"/>
+        <efx:param name="pack-luts-to-comb4" value="0" value_type="e_option"/>
+        <efx:param name="min-sr-fanout" value="0" value_type="e_integer"/>
+        <efx:param name="min-ce-fanout" value="0" value_type="e_integer"/>
+        <efx:param name="seq-opt-sync-only" value="0" value_type="e_option"/>
+        <efx:param name="blackbox-error" value="1" value_type="e_option"/>
+        <efx:param name="allow-const-ram-index" value="0" value_type="e_option"/>
+        <efx:param name="hdl-compile-unit" value="1" value_type="e_option"/>
+        <efx:param name="create-onehot-fsms" value="0" value_type="e_option"/>
+        <efx:param name="include" value="ip/DdrCtrl" value_type="e_string"/>
+        <efx:param name="include" value="src/ui" value_type="e_string"/>
+        <efx:param name="include" value="ip/R0_FIFO_8" value_type="e_string"/>
+        <efx:param name="include" value="ip/W0_FIFO_32" value_type="e_string"/>
+        <efx:param name="mult-decomp-retime" value="0" value_type="e_option"/>
+        <efx:param name="optimize-zero-init-rom" value="1" value_type="e_option"/>
+        <efx:param name="insert-carry-skip" value="0" value_type="e_option"/>
+        <efx:param name="mult-auto-pipeline" value="0" value_type="e_option"/>
+        <efx:param name="use-logic-for-small-mem" value="64" value_type="e_integer"/>
+        <efx:param name="use-logic-for-small-rom" value="64" value_type="e_integer"/>
+    </efx:synthesis>
+    <efx:place_and_route tool_name="efx_pnr">
+        <efx:param name="work_dir" value="work_pnr" value_type="e_string"/>
+        <efx:param name="verbose" value="off" value_type="e_bool"/>
+        <efx:param name="load_delaym" value="on" value_type="e_bool"/>
+        <efx:param name="optimization_level" value="CONGESTION_2" value_type="e_option"/>
+        <efx:param name="seed" value="4" value_type="e_integer"/>
+        <efx:param name="placer_effort_level" value="1" value_type="e_option"/>
+        <efx:param name="max_threads" value="32" value_type="e_integer"/>
+        <efx:param name="beneficial_skew" value="on" value_type="e_option"/>
+        <efx:param name="print_critical_path" value="10" value_type="e_integer"/>
+    </efx:place_and_route>
+    <efx:bitstream_generation tool_name="efx_pgm">
+        <efx:param name="mode" value="active" value_type="e_option"/>
+        <efx:param name="width" value="4" value_type="e_option"/>
+        <efx:param name="cold_boot" value="off" value_type="e_bool"/>
+        <efx:param name="cascade" value="off" value_type="e_option"/>
+        <efx:param name="enable_roms" value="on" value_type="e_option"/>
+        <efx:param name="spi_low_power_mode" value="off" value_type="e_bool"/>
+        <efx:param name="io_weak_pullup" value="on" value_type="e_bool"/>
+        <efx:param name="oscillator_clock_divider" value="DIV2" value_type="e_option"/>
+        <efx:param name="enable_crc_check" value="on" value_type="e_bool"/>
+        <efx:param name="bitstream_compression" value="on" value_type="e_bool"/>
+        <efx:param name="active_capture_clk_edge" value="negedge" value_type="e_option"/>
+        <efx:param name="release_tri_then_reset" value="on" value_type="e_bool"/>
+        <efx:param name="enable_external_master_clock" value="off" value_type="e_bool"/>
+        <efx:param name="jtag_usercode" value="0xFFFFFFFF" value_type="e_string"/>
+        <efx:param name="generate_bit" value="on" value_type="e_bool"/>
+        <efx:param name="generate_bitbin" value="on" value_type="e_bool"/>
+        <efx:param name="generate_hex" value="on" value_type="e_bool"/>
+        <efx:param name="generate_hexbin" value="on" value_type="e_bool"/>
+        <efx:param name="four_byte_addressing" value="off" value_type="e_bool"/>
+    </efx:bitstream_generation>
+    <efx:debugger>
+        <efx:param name="work_dir" value="work_dbg" value_type="e_string"/>
+        <efx:param name="auto_instantiation" value="off" value_type="e_bool"/>
+        <efx:param name="profile" value="NONE" value_type="e_string"/>
+    </efx:debugger>
+    <efx:security>
+        <efx:param name="enable_bitstream_encrypt" value="off" value_type="e_bool"/>
+        <efx:param name="enable_bitstream_auth" value="off" value_type="e_bool"/>
+        <efx:param name="encryption_key_file" value="NONE" value_type="e_string"/>
+        <efx:param name="auth_key_file" value="NONE" value_type="e_string"/>
+        <efx:param name="randomize_iv_value" value="off" value_type="e_bool"/>
+        <efx:param name="iv_value" value="" value_type="e_string"/>
+    </efx:security>
+</efx:project>
