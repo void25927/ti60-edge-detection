@@ -1,0 +1,1182 @@
+Running: efx_run_map.py Ti60_Edge_Detection --family Titanium --device Ti60F225 --project_xml D:\FPGA_Edge_Detection\project\Ti60_Edge_Detection.xml -v src/control/feature_menu_controller.v,t:default -v src/control/video_async_fifo.v,t:default -v src/control/video_control_mailbox.v,t:default -v src/control/video_reset_sync.v,t:default -v src/axi/video_history_manager.v,t:default -v src/axi/video_snapshot_arbiter.v,t:default -v src/ui/snapshot_capture.v,t:default -v src/ui/snapshot_axi_writer.v,t:default -v src/ui/snapshot_axi_reader.v,t:default -v src/ui/snapshot_line_overlay.v,t:default -v src/ui/snapshot_system.v,t:default -v src/control/key_debounce.v,t:default -v src/control/exboard_control.v,t:default -v Ti60_top.v,t:default -v src/lcd_para.v,t:default -v src/lcd_driver.v,t:default -v src/axi/AXI4_AWARMux.v,t:default -v src/axi/ddr_frame_manager.v,t:default -v src/axi/axi4_ctrl.v,t:default -v src/isp/VIP_RAW8_RGB888.v,t:default -v src/isp/mipi_center_crop_32.v,t:default -v src/isp/Line_Shift_RAM_8Bit.v,t:default -v src/isp/VIP_Matrix_Generate_3X3_8Bit.v,t:default -v src/cmos_i2c/i2c_timing_ctrl_reg16_dat8_wronly.v,t:default -v src/cmos_i2c/I2C_SC2210_19201080_4Lanes_Config.v,t:default -v pri/mipi/MIPIRx4LaneFre.v,t:default -v src/hdmi_ip/rgb2dvi.v,t:default -v src/hdmi_ip/tmds_channel.v,t:default -v src/isp/rgb888_to_gray.v,t:default -v src/isp/video_auto_levels.v,t:default -v src/cmos_i2c/i2c_register_writer.v,t:default -v src/cmos_i2c/sc2210_auto_exposure.v,t:default -v src/isp/gray_3x3_window.v,t:default -v src/isp/gray_edge_display.v,t:default -v src/isp/sobel_3x3.v,t:default -v src/isp/gradient_threshold.v,t:default -v src/isp/median_3x3.v,t:default -v src/isp/gaussian_3x3.v,t:default -v src/isp/canny_nms.v,t:default -v src/isp/canny_double_threshold.v,t:default -v src/isp/canny_hysteresis.v,t:default -v src/isp/canny_edge_pipeline.v,t:default -v src/isp/edge_overlay.v,t:default -v src/control/debounce.v,t:default -v src/control/key_event_controller.v,t:default -v src/control/system_mode_controller.v,t:default -v src/control/threshold_controller.v,t:default -v src/ui/font_rom_8x16.v,t:default -v src/ui/video_ui_overlay.v,t:default -v src/isp/edge_video_pipeline.v,t:default -v src/inspection/inspection_foreground.v,t:default -v src/inspection/inspection_run_encoder.v,t:default -v src/inspection/inspection_components.v,t:default -v src/inspection/inspection_geometry.v,t:default -v src/inspection/inspection_angle_sincos.v,t:default -v src/inspection/inspection_object_tracker.v,t:default -v src/inspection/inspection_axial_profile.v,t:default -v src/inspection/inspection_axial_compare.v,t:default -v src/inspection/inspection_axial_frontend.v,t:default -v src/inspection/inspection_axial_manager.v,t:default -v src/inspection/inspection_axial_system.v,t:default -v src/inspection/inspection_rgb_adapter.v,t:default -v src/inspection/inspection_result_history.v,t:default -v src/inspection/inspection_user_control.v,t:default -v src/inspection/inspection_video_retime.v,t:default -v src/inspection/inspection_formal_path.v,t:default --dir D:\FPGA_Edge_Detection\project\ip\DdrCtrl --dir D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8 --dir D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32 --output_dir outflow --opt root=Ti60_top --opt veri_options=verilog_mode=verilog_2k,vhdl_mode=vhdl_2008 work-dir=work_syn write_efx_verilog=on I=ip/DdrCtrl I=ip/R0_FIFO_8 I=ip/W0_FIFO_32
+Running: C:/Efinity/2023.2\bin\efx_map.exe --project Ti60_Edge_Detection --family Titanium --device Ti60F225 --output-dir outflow --I D:\FPGA_Edge_Detection\project\ip\DdrCtrl --I D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8 --I D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32 --v src/control/feature_menu_controller.v,t:default --v src/control/video_async_fifo.v,t:default --v src/control/video_control_mailbox.v,t:default --v src/control/video_reset_sync.v,t:default --v src/axi/video_history_manager.v,t:default --v src/axi/video_snapshot_arbiter.v,t:default --v src/ui/snapshot_capture.v,t:default --v src/ui/snapshot_axi_writer.v,t:default --v src/ui/snapshot_axi_reader.v,t:default --v src/ui/snapshot_line_overlay.v,t:default --v src/ui/snapshot_system.v,t:default --v src/control/key_debounce.v,t:default --v src/control/exboard_control.v,t:default --v D:\FPGA_Edge_Detection\project\Ti60_top.v,t:default --v src/lcd_para.v,t:default --v src/lcd_driver.v,t:default --v src/axi/AXI4_AWARMux.v,t:default --v src/axi/ddr_frame_manager.v,t:default --v src/axi/axi4_ctrl.v,t:default --v src/isp/VIP_RAW8_RGB888.v,t:default --v src/isp/mipi_center_crop_32.v,t:default --v src/isp/Line_Shift_RAM_8Bit.v,t:default --v src/isp/VIP_Matrix_Generate_3X3_8Bit.v,t:default --v src/cmos_i2c/i2c_timing_ctrl_reg16_dat8_wronly.v,t:default --v src/cmos_i2c/I2C_SC2210_19201080_4Lanes_Config.v,t:default --v pri/mipi/MIPIRx4LaneFre.v,t:default --v src/hdmi_ip/rgb2dvi.v,t:default --v src/hdmi_ip/tmds_channel.v,t:default --v src/isp/rgb888_to_gray.v,t:default --v src/isp/video_auto_levels.v,t:default --v src/cmos_i2c/i2c_register_writer.v,t:default --v src/cmos_i2c/sc2210_auto_exposure.v,t:default --v src/isp/gray_3x3_window.v,t:default --v src/isp/gray_edge_display.v,t:default --v src/isp/sobel_3x3.v,t:default --v src/isp/gradient_threshold.v,t:default --v src/isp/median_3x3.v,t:default --v src/isp/gaussian_3x3.v,t:default --v src/isp/canny_nms.v,t:default --v src/isp/canny_double_threshold.v,t:default --v src/isp/canny_hysteresis.v,t:default --v src/isp/canny_edge_pipeline.v,t:default --v src/isp/edge_overlay.v,t:default --v src/control/debounce.v,t:default --v src/control/key_event_controller.v,t:default --v src/control/system_mode_controller.v,t:default --v src/control/threshold_controller.v,t:default --v src/ui/font_rom_8x16.v,t:default --v src/ui/video_ui_overlay.v,t:default --v src/isp/edge_video_pipeline.v,t:default --v src/inspection/inspection_foreground.v,t:default --v src/inspection/inspection_run_encoder.v,t:default --v src/inspection/inspection_components.v,t:default --v src/inspection/inspection_geometry.v,t:default --v src/inspection/inspection_angle_sincos.v,t:default --v src/inspection/inspection_object_tracker.v,t:default --v src/inspection/inspection_axial_profile.v,t:default --v src/inspection/inspection_axial_compare.v,t:default --v src/inspection/inspection_axial_frontend.v,t:default --v src/inspection/inspection_axial_manager.v,t:default --v src/inspection/inspection_axial_system.v,t:default --v src/inspection/inspection_rgb_adapter.v,t:default --v src/inspection/inspection_result_history.v,t:default --v src/inspection/inspection_user_control.v,t:default --v src/inspection/inspection_video_retime.v,t:default --v src/inspection/inspection_formal_path.v,t:default --project-xml D:\FPGA_Edge_Detection\project\Ti60_Edge_Detection.xml --binary-db outflow\Ti60_Edge_Detection.vdb --root=Ti60_top --veri_options=verilog_mode=verilog_2k,vhdl_mode=vhdl_2008 --work-dir=work_syn --write-efx-verilog=outflow\Ti60_Edge_Detection.map.v --I=ip/DdrCtrl --I=ip/R0_FIFO_8 --I=ip/W0_FIFO_32
+[EFX-0000 INFO] Efinix FPGA Synthesis.
+[EFX-0000 INFO] Version: 2023.2.307.5.10
+[EFX-0000 INFO] Compiled: May 19 2024.
+[EFX-0000 INFO] 
+[EFX-0000 INFO] Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+INFO: Read project database "D:\FPGA_Edge_Detection\project\Ti60_Edge_Detection.xml"
+-- Analyzing Verilog file 'C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v' (VERI-1482)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(8): INFO: compiling module 'EFX_IBUF' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(16): INFO: compiling module 'EFX_OBUF' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(23): INFO: compiling module 'EFX_IO_BUF' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(33): INFO: compiling module 'EFX_CLKOUT' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(41): INFO: compiling module 'EFX_IREG' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(51): INFO: compiling module 'EFX_OREG' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(60): INFO: compiling module 'EFX_IOREG' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(75): INFO: compiling module 'EFX_IDDIO' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(87): INFO: compiling module 'EFX_ODDIO' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(99): INFO: compiling module 'EFX_GPIO_V1' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(118): INFO: compiling module 'EFX_PLL_V1' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(136): INFO: compiling module 'EFX_OSC_V1' (VERI-1018)
+[EFX-0034 WARNING] Project XML file specified. Source files specified in the command line are ignored.
+INFO: Read project database "D:\FPGA_Edge_Detection\project\Ti60_Edge_Detection.xml"
+INFO: ***** Beginning Analysis ... *****
+INFO: default VHDL library search path is now "C:/Efinity/2023.2/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504)
+-- Analyzing Verilog file 'C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\control\feature_menu_controller.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\control\video_async_fifo.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\control\video_control_mailbox.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\control\video_reset_sync.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\axi\video_history_manager.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\axi\video_snapshot_arbiter.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\ui\snapshot_capture.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\ui\snapshot_axi_writer.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\ui\snapshot_axi_reader.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\ui\snapshot_system.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\control\key_debounce.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\control\exboard_control.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\Ti60_top.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\lcd_para.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\lcd_driver.v' (VERI-1482)
+D:\FPGA_Edge_Detection\project\src\lcd_driver.v(37): INFO: analyzing included file 'D:\FPGA_Edge_Detection\project\src/lcd_para.v' (VERI-1328)
+D:\FPGA_Edge_Detection\project\src\lcd_driver.v(37): INFO: back to file 'D:\FPGA_Edge_Detection\project\src\lcd_driver.v' (VERI-2320)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\axi\AXI4_AWARMux.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\axi\ddr_frame_manager.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\axi\axi4_ctrl.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\VIP_RAW8_RGB888.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\mipi_center_crop_32.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\Line_Shift_RAM_8Bit.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\VIP_Matrix_Generate_3X3_8Bit.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\cmos_i2c\i2c_timing_ctrl_reg16_dat8_wronly.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\cmos_i2c\I2C_SC2210_19201080_4Lanes_Config.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\hdmi_ip\rgb2dvi.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\hdmi_ip\tmds_channel.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\rgb888_to_gray.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\video_auto_levels.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\cmos_i2c\i2c_register_writer.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\cmos_i2c\sc2210_auto_exposure.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\gray_edge_display.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\sobel_3x3.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\gradient_threshold.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\median_3x3.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\gaussian_3x3.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\canny_nms.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\canny_double_threshold.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\canny_hysteresis.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\canny_edge_pipeline.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\edge_overlay.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\control\debounce.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\control\key_event_controller.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\control\system_mode_controller.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\control\threshold_controller.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\ui\font_rom_8x16.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\ui\video_ui_overlay.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\isp\edge_video_pipeline.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_foreground.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_run_encoder.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_geometry.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_angle_sincos.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_profile.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_compare.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_system.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_rgb_adapter.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_result_history.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_user_control.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_video_retime.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\src\inspection\inspection_formal_path.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v' (VERI-1482)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(266): INFO: analyzing included file 'D:\FPGA_Edge_Detection\project\ip\DdrCtrl/ddr3_controller.vh' (VERI-1328)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(266): INFO: back to file 'D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v' (VERI-2320)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: undeclared symbol '**', assumed default net type '**' (VERI-2561)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: undeclared symbol '**', assumed default net type '**' (VERI-2561)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(573): INFO: analyzing included file 'D:\FPGA_Edge_Detection\project\ip\DdrCtrl/ddr3_controller.vh' (VERI-1328)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(573): INFO: back to file 'D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v' (VERI-2320)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(1567): INFO: analyzing included file 'D:\FPGA_Edge_Detection\project\ip\DdrCtrl/ddr3_controller.vh' (VERI-1328)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(1567): INFO: back to file 'D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v' (VERI-2320)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(1821): INFO: analyzing included file 'D:\FPGA_Edge_Detection\project\ip\DdrCtrl/ddr3_controller.vh' (VERI-1328)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(1821): INFO: back to file 'D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v' (VERI-2320)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(2124): INFO: analyzing included file 'D:\FPGA_Edge_Detection\project\ip\DdrCtrl/ddr3_controller.vh' (VERI-1328)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(2124): INFO: back to file 'D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v' (VERI-2320)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(2574): INFO: analyzing included file 'D:\FPGA_Edge_Detection\project\ip\DdrCtrl/ddr3_controller.vh' (VERI-1328)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(2574): INFO: back to file 'D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v' (VERI-2320)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v' (VERI-1482)
+INFO: Analysis took 0.515245 seconds.
+INFO: 	Analysis took 0.453125 seconds (approximately) in total CPU time.
+INFO: Analysis virtual memory usage: begin = 55.676 MB, end = 63.66 MB, delta = 7.984 MB
+INFO: 	Analysis peak virtual memory usage = 63.66 MB
+INFO: Analysis resident set memory usage: begin = 60.708 MB, end = 70.58 MB, delta = 9.872 MB
+INFO: 	Analysis peak resident set memory usage = 70.58 MB
+INFO: ***** Ending Analysis ... *****
+INFO: ***** Beginning Elaboration ... *****
+D:\FPGA_Edge_Detection\project\Ti60_top.v(412): WARNING: port 'cal_fail_log' remains unconnected for this instance (VERI-1927)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(544): WARNING: port 'INDEX' remains unconnected for this instance (VERI-1927)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(627): WARNING: port 'axi_awid' remains unconnected for this instance (VERI-1927)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(653): WARNING: port 'lcd_xpos' remains unconnected for this instance (VERI-1927)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(714): WARNING: port 'TMDS_Clk_p' remains unconnected for this instance (VERI-1927)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(6): INFO: compiling module 'Ti60_top' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(182): WARNING: port 'wr_busy' remains unconnected for this instance (VERI-1927)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(182): WARNING: port 'wr_data' is not connected on this instance (VERI-2435)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(49): INFO: compiling module 'DdrCtrl' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(1822): INFO: compiling module 'efx_ddr3_soft_controller_b3304f511b0d427589c3a2482540e4be' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): WARNING: expression size ** truncated to fit in target size ** (VERI-1209)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(884): INFO: compiling module 'EFX_SRL8' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): WARNING: actual bit length ** differs from formal bit length *** for port '**' (VERI-1330)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): WARNING: expression size ** truncated to fit in target size ** (VERI-1209)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): WARNING: expression size ** truncated to fit in target size ** (VERI-1209)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): WARNING: actual bit length ** differs from formal bit length *** for port '**' (VERI-1330)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): WARNING: port '**' remains unconnected for this instance (VERI-1927)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: extracting RAM for identifier '**' (VERI-2571)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: extracting RAM for identifier '**' (VERI-2571)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: extracting RAM for identifier '**' (VERI-2571)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(2894): INFO: compiling module 'efx_fifo_top_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=128)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3186): INFO: compiling module 'efx_fifo_ram_b3304f511b0d427589c3a2482540e4be(WDATA_WIDTH=128,RDATA_WIDTH=128,OUTPUT_REG=0,RAM_MUX_RATIO=1)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3223): INFO: extracting RAM for identifier 'ram' (VERI-2571)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3672): INFO: compiling module 'efx_fifo_ctl_b3304f511b0d427589c3a2482540e4be_renamed_due_excessive_length_1' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3948): WARNING: expression size 32 truncated to fit in target size 10 (VERI-1209)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3949): WARNING: expression size 32 truncated to fit in target size 10 (VERI-1209)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(4068): INFO: compiling module 'efx_fifo_bin2gray_b3304f511b0d427589c3a2482540e4be(WIDTH=10)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3593): INFO: compiling module 'efx_fifo_datasync_b3304f511b0d427589c3a2482540e4be(STAGE=2,WIDTH=10)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3508): INFO: compiling module 'efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=10)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3508): INFO: compiling module 'efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=9)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3508): INFO: compiling module 'efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=8)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3508): INFO: compiling module 'efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=7)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3508): INFO: compiling module 'efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=6)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3508): INFO: compiling module 'efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3508): INFO: compiling module 'efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=4)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3508): INFO: compiling module 'efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=3)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(3508): INFO: compiling module 'efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=2)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): WARNING: actual bit length ** differs from formal bit length *** for port '**' (VERI-1330)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: extracting RAM for identifier '**' (VERI-2571)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: extracting RAM for identifier '**' (VERI-2571)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: extracting RAM for identifier '**' (VERI-2571)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): WARNING: expression size ** truncated to fit in target size ** (VERI-1209)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): WARNING: net '**' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): WARNING: input port '**' remains unconnected for this instance (VDB-1053)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): WARNING: input port '**' is not connected on this instance (VDB-1013)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(0): INFO: compiling module '**' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v(116): WARNING: input port 'wr_data[127]' is not connected on this instance (VDB-1013)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(379): WARNING: actual bit length 4 differs from formal bit length 8 for port 'axi_aid' (VERI-1330)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(386): WARNING: actual bit length 4 differs from formal bit length 8 for port 'axi_wid' (VERI-1330)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(395): WARNING: actual bit length 4 differs from formal bit length 8 for port 'axi_bid' (VERI-1330)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(401): WARNING: actual bit length 4 differs from formal bit length 8 for port 'axi_rid' (VERI-1330)
+D:\FPGA_Edge_Detection\project\src\axi\video_snapshot_arbiter.v(4): INFO: compiling module 'video_snapshot_arbiter' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\axi\video_snapshot_arbiter.v(56): WARNING: expression size 3 truncated to fit in target size 2 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\axi\video_snapshot_arbiter.v(61): WARNING: expression size 32 truncated to fit in target size 4 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\axi\video_snapshot_arbiter.v(62): WARNING: expression size 32 truncated to fit in target size 2 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\axi\video_snapshot_arbiter.v(68): WARNING: expression size 32 truncated to fit in target size 2 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\axi\video_snapshot_arbiter.v(71): WARNING: expression size 32 truncated to fit in target size 2 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\cmos_i2c\i2c_timing_ctrl_reg16_dat8_wronly.v(34): INFO: compiling module 'i2c_timing_ctrl_reg16_dat8_wronly(CLK_FREQ=96000000,I2C_FREQ=50000)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\cmos_i2c\i2c_timing_ctrl_reg16_dat8_wronly.v(371): WARNING: expression size 32 truncated to fit in target size 1 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\cmos_i2c\I2C_SC2210_19201080_4Lanes_Config.v(18): INFO: compiling module 'I2C_SC2210_19201080_4Lanes_Config' (VERI-1018)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(3): INFO: compiling module 'MIPIRx4LaneFre' (VERI-1018)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(51): WARNING: net '_0046_[5]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(59): WARNING: net '_0054_[5]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(61): WARNING: net '_0056_[5]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(63): WARNING: net '_0058_[5]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(65): WARNING: net '_0060_[5]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(70): WARNING: net '_0065_[3]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(134): WARNING: net '_0129_[5]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(142): WARNING: net '_0137_[5]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(144): WARNING: net '_0139_[5]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(146): WARNING: net '_0141_[5]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(148): WARNING: net '_0143_[5]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(336): WARNING: net '_0331_[79]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(337): WARNING: net '_0332_[63]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(338): WARNING: net '_0333_[47]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(339): WARNING: net '_0334_[47]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(409): WARNING: net '_0404_[7]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(477): WARNING: net '_0472_[3]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(1405): WARNING: net '_1400_[15]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\pri\mipi\MIPIRx4LaneFre.v(1416): WARNING: net '_1411_[2]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(540): WARNING: actual bit length 1 differs from formal bit length 4 for port 'VSYNC' (VERI-1330)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(541): WARNING: actual bit length 1 differs from formal bit length 4 for port 'HSYNC' (VERI-1330)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(554): WARNING: expression size 3 truncated to fit in target size 2 (VERI-1209)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(555): WARNING: expression size 7 truncated to fit in target size 6 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\axi\axi4_ctrl.v(2): INFO: compiling module 'axi4_ctrl(C_ID_LEN=4,C_RD_END_ADDR=2073600,C_W_WIDTH=32)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\axi\axi4_ctrl.v(104): WARNING: expression size 32 truncated to fit in target size 16 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\control\video_control_mailbox.v(4): INFO: compiling module 'video_control_mailbox(WIDTH=36)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\control\video_reset_sync.v(3): INFO: compiling module 'video_reset_sync' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\control\video_control_mailbox.v(4): INFO: compiling module 'video_control_mailbox(WIDTH=39)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\axi\video_history_manager.v(3): INFO: compiling module 'video_history_manager' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\axi\video_history_manager.v(16): INFO: extracting RAM for identifier 'slot_id' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\axi\axi4_ctrl.v(219): WARNING: expression size 3 truncated to fit in target size 2 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\axi\axi4_ctrl.v(263): WARNING: expression size 2 truncated to fit in target size 1 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\axi\axi4_ctrl.v(286): WARNING: expression size 23 truncated to fit in target size 22 (VERI-1209)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(99): WARNING: port 'a_wr_rst_i' remains unconnected for this instance (VERI-1927)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(49): INFO: compiling module 'W0_FIFO_32' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(380): INFO: compiling module 'efx_fifo_top_a9cce908926e46bcad5318d1e7729cc0_renamed_due_excessive_length_2' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(672): INFO: compiling module 'efx_fifo_ram_a9cce908926e46bcad5318d1e7729cc0(MODE="FWFT",WR_DEPTH=2048,WDATA_WIDTH=32,RDATA_WIDTH=128,WADDR_WIDTH=11,OUTPUT_REG=0)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(709): INFO: extracting RAM for identifier 'ram' (VERI-2571)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(990): INFO: compiling module 'efx_fifo_ctl_a9cce908926e46bcad5318d1e7729cc0_renamed_due_excessive_length_3' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(1266): WARNING: expression size 32 truncated to fit in target size 12 (VERI-1209)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(1267): WARNING: expression size 32 truncated to fit in target size 10 (VERI-1209)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(291): INFO: compiling module 'efx_fifo_bin2gray_a9cce908926e46bcad5318d1e7729cc0(WIDTH=10)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(120): INFO: compiling module 'efx_fifo_datasync_a9cce908926e46bcad5318d1e7729cc0(STAGE=3,WIDTH=10)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(203): INFO: compiling module 'efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=10)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(203): INFO: compiling module 'efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=9)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(203): INFO: compiling module 'efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=8)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(203): INFO: compiling module 'efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=7)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(203): INFO: compiling module 'efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=6)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(203): INFO: compiling module 'efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(203): INFO: compiling module 'efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=4)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(203): INFO: compiling module 'efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=3)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(203): INFO: compiling module 'efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=2)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(291): INFO: compiling module 'efx_fifo_bin2gray_a9cce908926e46bcad5318d1e7729cc0(WIDTH=12)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(120): INFO: compiling module 'efx_fifo_datasync_a9cce908926e46bcad5318d1e7729cc0(STAGE=3,WIDTH=12)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(203): INFO: compiling module 'efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=12)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(203): INFO: compiling module 'efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=11)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(94): WARNING: actual bit length 11 differs from formal bit length 12 for port 'wr_datacount_o' (VERI-1330)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(97): WARNING: actual bit length 9 differs from formal bit length 10 for port 'rd_datacount_o' (VERI-1330)
+D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v(84): WARNING: input port 'a_wr_rst_i' is not connected on this instance (VDB-1013)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(109): WARNING: port 'a_wr_rst_i' remains unconnected for this instance (VERI-1927)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(49): INFO: compiling module 'R0_FIFO_8' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(390): INFO: compiling module 'efx_fifo_top_9ec837445d8644a7b9e8068776e961ce_renamed_due_excessive_length_4' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(682): INFO: compiling module 'efx_fifo_ram_9ec837445d8644a7b9e8068776e961ce(FAMILY="TITANIUM",MODE="FWFT",RD_DEPTH=8192,WDATA_WIDTH=128,RADDR_WIDTH=13,OUTPUT_REG=0,RAM_MUX_RATIO=16)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(719): INFO: extracting RAM for identifier 'ram' (VERI-2571)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(1000): INFO: compiling module 'efx_fifo_ctl_9ec837445d8644a7b9e8068776e961ce_renamed_due_excessive_length_5' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(1270): WARNING: expression size 32 truncated to fit in target size 10 (VERI-1209)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(1271): WARNING: expression size 32 truncated to fit in target size 14 (VERI-1209)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(301): INFO: compiling module 'efx_fifo_bin2gray_9ec837445d8644a7b9e8068776e961ce(WIDTH=14)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(130): INFO: compiling module 'efx_fifo_datasync_9ec837445d8644a7b9e8068776e961ce(STAGE=3,WIDTH=14)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(213): INFO: compiling module 'efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=14)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(213): INFO: compiling module 'efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=13)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(213): INFO: compiling module 'efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=12)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(213): INFO: compiling module 'efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=11)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(213): INFO: compiling module 'efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=10)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(213): INFO: compiling module 'efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=9)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(213): INFO: compiling module 'efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=8)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(213): INFO: compiling module 'efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=7)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(213): INFO: compiling module 'efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=6)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(213): INFO: compiling module 'efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(213): INFO: compiling module 'efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=4)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(213): INFO: compiling module 'efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=3)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(213): INFO: compiling module 'efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=2)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(301): INFO: compiling module 'efx_fifo_bin2gray_9ec837445d8644a7b9e8068776e961ce(WIDTH=10)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(130): INFO: compiling module 'efx_fifo_datasync_9ec837445d8644a7b9e8068776e961ce(STAGE=3,WIDTH=10)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(104): WARNING: actual bit length 9 differs from formal bit length 10 for port 'wr_datacount_o' (VERI-1330)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(107): WARNING: actual bit length 13 differs from formal bit length 14 for port 'rd_datacount_o' (VERI-1330)
+D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v(89): WARNING: input port 'a_wr_rst_i' is not connected on this instance (VDB-1013)
+D:\FPGA_Edge_Detection\project\src\axi\axi4_ctrl.v(497): WARNING: expression size 17 truncated to fit in target size 16 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\axi\axi4_ctrl.v(540): WARNING: expression size 23 truncated to fit in target size 22 (VERI-1209)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(626): WARNING: actual bit length 8 differs from formal bit length 32 for port 'tp_o' (VERI-1330)
+D:\FPGA_Edge_Detection\project\src\lcd_driver.v(39): INFO: compiling module 'lcd_driver' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\lcd_driver.v(145): WARNING: expression size 14 truncated to fit in target size 12 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\isp\VIP_RAW8_RGB888.v(31): INFO: compiling module 'VIP_RAW8_RGB888(IMG_HDISP=1920,IMG_VDISP=1080)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\VIP_Matrix_Generate_3X3_8Bit.v(35): INFO: compiling module 'VIP_Matrix_Generate_3X3_8Bit(IMG_HDISP=14'b011110000000,IMG_VDISP=14'b010000111000)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\Line_Shift_RAM_8Bit.v(2): INFO: compiling module 'Line_Shift_RAM_8Bit(DATA_DEPTH=14'b011110000000)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\Line_Shift_RAM_8Bit.v(64): INFO: extracting RAM for identifier 'r_ram' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\isp\Line_Shift_RAM_8Bit.v(2): INFO: compiling module 'Line_Shift_RAM_8Bit(DATA_DEPTH=14'b011110000000,DELAY_NUM=1)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\Line_Shift_RAM_8Bit.v(64): INFO: extracting RAM for identifier 'r_ram' (VERI-2571)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(662): WARNING: actual bit length 32 differs from formal bit length 2 for port 'mirror' (VERI-1330)
+D:\FPGA_Edge_Detection\project\src\hdmi_ip\rgb2dvi.v(7): INFO: compiling module 'rgb2dvi(ENABLE_OSERDES=0)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\hdmi_ip\tmds_channel.v(4): INFO: compiling module 'tmds_channel' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\hdmi_ip\rgb2dvi.v(50): WARNING: actual bit length 32 differs from formal bit length 4 for port 'data_island_data' (VERI-1330)
+D:\FPGA_Edge_Detection\project\src\hdmi_ip\rgb2dvi.v(52): WARNING: actual bit length 4 differs from formal bit length 3 for port 'mode' (VERI-1330)
+D:\FPGA_Edge_Detection\project\src\hdmi_ip\rgb2dvi.v(58): WARNING: actual bit length 32 differs from formal bit length 4 for port 'data_island_data' (VERI-1330)
+D:\FPGA_Edge_Detection\project\src\hdmi_ip\rgb2dvi.v(60): WARNING: actual bit length 4 differs from formal bit length 3 for port 'mode' (VERI-1330)
+D:\FPGA_Edge_Detection\project\src\hdmi_ip\rgb2dvi.v(66): WARNING: actual bit length 32 differs from formal bit length 4 for port 'data_island_data' (VERI-1330)
+D:\FPGA_Edge_Detection\project\src\hdmi_ip\rgb2dvi.v(68): WARNING: actual bit length 4 differs from formal bit length 3 for port 'mode' (VERI-1330)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(696): WARNING: actual bit length 32 differs from formal bit length 1 for port 'oe_i' (VERI-1330)
+D:\FPGA_Edge_Detection\project\src\isp\video_auto_levels.v(4): INFO: compiling module 'video_auto_levels(FRAME_PIXELS=2073600,INITIAL_RED_GAIN=10'b0101000000,INITIAL_BLUE_GAIN=10'b0101000000)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\cmos_i2c\sc2210_auto_exposure.v(4): INFO: compiling module 'sc2210_auto_exposure' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\cmos_i2c\i2c_register_writer.v(4): INFO: compiling module 'i2c_register_writer' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\mipi_center_crop_32.v(5): INFO: compiling module 'mipi_center_crop_32(CROP_X=0,OUTPUT_WIDTH=1920)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\control\debounce.v(4): INFO: compiling module 'debounce' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\control\key_event_controller.v(5): INFO: compiling module 'key_event_controller' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\control\video_control_mailbox.v(4): INFO: compiling module 'video_control_mailbox(WIDTH=1)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\control\feature_menu_controller.v(3): INFO: compiling module 'feature_menu_controller(INSPECTION_MENU=1)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\control\feature_menu_controller.v(23): WARNING: expression size 3 truncated to fit in target size 2 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\control\feature_menu_controller.v(40): WARNING: expression size 4 truncated to fit in target size 3 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\control\exboard_control.v(3): INFO: compiling module 'exboard_control' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\control\key_debounce.v(3): INFO: compiling module 'key_debounce(CLK_FREQ_HZ=148800000)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\control\threshold_controller.v(5): INFO: compiling module 'threshold_controller' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\edge_video_pipeline.v(5): INFO: compiling module 'edge_video_pipeline(IMAGE_WIDTH=1920,ADDR_WIDTH=11,THRESHOLD=11'b01010000,RUNTIME_MEDIAN=1,RUNTIME_CANNY=1)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\rgb888_to_gray.v(5): INFO: compiling module 'rgb888_to_gray' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\canny_edge_pipeline.v(5): INFO: compiling module 'canny_edge_pipeline(IMAGE_WIDTH=1920,ADDR_WIDTH=11,RUNTIME_MEDIAN=1,RUNTIME_CANNY=1)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v(5): INFO: compiling module 'gray_3x3_window(PIXEL_WIDTH=32)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v(230): INFO: compiling module 'gray_line_buffer_sync(DATA_WIDTH=32)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v(248): INFO: extracting RAM for identifier 'memory' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\isp\median_3x3.v(4): INFO: compiling module 'median_3x3' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v(5): INFO: compiling module 'gray_3x3_window(PIXEL_WIDTH=41)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v(230): INFO: compiling module 'gray_line_buffer_sync(DATA_WIDTH=41)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v(248): INFO: extracting RAM for identifier 'memory' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\isp\gaussian_3x3.v(4): INFO: compiling module 'gaussian_3x3' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\sobel_3x3.v(5): INFO: compiling module 'sobel_3x3' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v(5): INFO: compiling module 'gray_3x3_window(PIXEL_WIDTH=46)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v(230): INFO: compiling module 'gray_line_buffer_sync(DATA_WIDTH=46)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v(248): INFO: extracting RAM for identifier 'memory' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\isp\canny_nms.v(4): INFO: compiling module 'canny_nms' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\canny_double_threshold.v(4): INFO: compiling module 'canny_double_threshold' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v(5): INFO: compiling module 'gray_3x3_window(PIXEL_WIDTH=35)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v(230): INFO: compiling module 'gray_line_buffer_sync(DATA_WIDTH=35)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v(248): INFO: extracting RAM for identifier 'memory' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\isp\canny_hysteresis.v(6): INFO: compiling module 'canny_hysteresis' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\canny_hysteresis.v(6): INFO: compiling module 'canny_hysteresis(REPAIR_SHORT_GAP=1)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\edge_overlay.v(5): INFO: compiling module 'edge_overlay(EDGE_G=8'b11111111,EDGE_B=8'b0,EXPAND_PIXELS=4)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\gray_edge_display.v(6): INFO: compiling module 'gray_edge_display(SOURCE_WIDTH=1920,FIFO_START_LEVEL=1920)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\isp\gray_edge_display.v(65): INFO: extracting RAM for identifier 'line_bank0' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\isp\gray_edge_display.v(66): INFO: extracting RAM for identifier 'line_bank1' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_formal_path.v(3): INFO: compiling module 'inspection_formal_path' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_video_retime.v(3): INFO: compiling module 'inspection_video_retime' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_video_retime.v(20): INFO: extracting RAM for identifier 'memory' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_video_retime.v(21): INFO: extracting RAM for identifier 'metadata' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_rgb_adapter.v(3): INFO: compiling module 'inspection_rgb_adapter' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_system.v(3): INFO: compiling module 'inspection_axial_system' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v(4): INFO: compiling module 'inspection_axial_frontend(OUTPUT_CYCLE=2450000)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v(32): INFO: extracting RAM for identifier 'sx' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v(32): INFO: extracting RAM for identifier 'sy' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v(33): INFO: extracting RAM for identifier 'sxx' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v(33): INFO: extracting RAM for identifier 'syy' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v(33): INFO: extracting RAM for identifier 'sxy' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_foreground.v(3): INFO: compiling module 'inspection_foreground' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_run_encoder.v(3): INFO: compiling module 'inspection_run_encoder' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(4): INFO: compiling module 'inspection_components(MAX_RUNS=2048,MAX_LABELS=64)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(49): INFO: extracting RAM for identifier 'records' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(50): INFO: extracting RAM for identifier 'labels' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(51): INFO: extracting RAM for identifier 'parent' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(52): INFO: extracting RAM for identifier 'object_map' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(53): INFO: extracting RAM for identifier 'roots' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(54): INFO: extracting RAM for identifier 'area' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(55): INFO: extracting RAM for identifier 'bx0' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(55): INFO: extracting RAM for identifier 'bx1' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(55): INFO: extracting RAM for identifier 'by0' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(55): INFO: extracting RAM for identifier 'by1' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(56): INFO: extracting RAM for identifier 'seed_x' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(56): INFO: extracting RAM for identifier 'seed_y' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(57): INFO: extracting RAM for identifier 'sx' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(57): INFO: extracting RAM for identifier 'sy' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(58): INFO: extracting RAM for identifier 'sxx' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(58): INFO: extracting RAM for identifier 'syy' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(58): INFO: extracting RAM for identifier 'sxy' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(190): WARNING: expression size 8 truncated to fit in target size 7 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v(239): WARNING: expression size 8 truncated to fit in target size 7 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_geometry.v(3): INFO: compiling module 'inspection_geometry' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_geometry.v(101): WARNING: expression size 19 truncated to fit in target size 16 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_angle_sincos.v(3): INFO: compiling module 'inspection_angle_sincos' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_profile.v(3): INFO: compiling module 'inspection_axial_profile' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(3): INFO: compiling module 'inspection_axial_manager' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(38): INFO: extracting RAM for identifier 'ids' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(39): INFO: extracting RAM for identifier 'generation' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(39): INFO: extracting RAM for identifier 'detect_fid' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(40): INFO: extracting RAM for identifier 'stable' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(41): INFO: extracting RAM for identifier 'status' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(42): INFO: extracting RAM for identifier 'anchor' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(45): INFO: extracting RAM for identifier 'qdescriptor' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(46): INFO: extracting RAM for identifier 'qfid' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(46): INFO: extracting RAM for identifier 'qgen' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(46): INFO: extracting RAM for identifier 'qtime' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(47): INFO: extracting RAM for identifier 'qtid' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(48): INFO: extracting RAM for identifier 'qslot' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(3): INFO: compiling module 'inspection_object_tracker' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(33): INFO: extracting RAM for identifier 'ids' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(34): INFO: extracting RAM for identifier 'age' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(35): INFO: extracting RAM for identifier 'px' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(35): INFO: extracting RAM for identifier 'py' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(35): INFO: extracting RAM for identifier 'px0' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(35): INFO: extracting RAM for identifier 'px1' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(35): INFO: extracting RAM for identifier 'py0' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(35): INFO: extracting RAM for identifier 'py1' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(36): INFO: extracting RAM for identifier 'pa' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(37): INFO: extracting RAM for identifier 'pang' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(38): INFO: extracting RAM for identifier 'pc' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(39): INFO: extracting RAM for identifier 'x' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(39): INFO: extracting RAM for identifier 'y' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(39): INFO: extracting RAM for identifier 'x0' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(39): INFO: extracting RAM for identifier 'x1' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(39): INFO: extracting RAM for identifier 'y0' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(39): INFO: extracting RAM for identifier 'y1' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(40): INFO: extracting RAM for identifier 'a' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(41): INFO: extracting RAM for identifier 'ang' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(42): INFO: extracting RAM for identifier 'cs' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(52): INFO: extracting RAM for identifier 'selected' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v(67): WARNING: expression size 19 truncated to fit in target size 18 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_compare.v(3): INFO: compiling module 'inspection_axial_compare' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_compare.v(65): WARNING: expression size 32 truncated to fit in target size 22 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_compare.v(66): WARNING: expression size 32 truncated to fit in target size 22 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(145): WARNING: expression size 9 truncated to fit in target size 8 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v(154): WARNING: expression size 32 truncated to fit in target size 2 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_user_control.v(3): INFO: compiling module 'inspection_user_control' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_result_history.v(3): INFO: compiling module 'inspection_result_history(PAYLOAD_WIDTH=655)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_result_history.v(17): INFO: extracting RAM for identifier 'ids' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\inspection\inspection_result_history.v(18): INFO: extracting RAM for identifier 'data' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_system.v(3): INFO: compiling module 'snapshot_system' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_capture.v(3): INFO: compiling module 'snapshot_capture' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_capture.v(66): WARNING: expression size 4 truncated to fit in target size 3 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_capture.v(67): WARNING: expression size 4 truncated to fit in target size 3 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_capture.v(92): WARNING: expression size 3 truncated to fit in target size 2 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\control\video_async_fifo.v(4): INFO: compiling module 'video_async_fifo(DATA_WIDTH=50)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\control\video_async_fifo.v(12): INFO: extracting RAM for identifier 'memory' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_axi_writer.v(4): INFO: compiling module 'snapshot_axi_writer' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\control\video_async_fifo.v(4): INFO: compiling module 'video_async_fifo(DATA_WIDTH=2,ADDR_BITS=2)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\control\video_async_fifo.v(12): INFO: extracting RAM for identifier 'memory' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_system.v(111): WARNING: expression size 32 truncated to fit in target size 8 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\control\video_async_fifo.v(4): INFO: compiling module 'video_async_fifo(DATA_WIDTH=17,ADDR_BITS=2)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\control\video_async_fifo.v(12): INFO: extracting RAM for identifier 'memory' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_axi_reader.v(3): INFO: compiling module 'snapshot_axi_reader' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_axi_reader.v(38): INFO: extracting RAM for identifier 'burst_data' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_axi_reader.v(39): INFO: extracting RAM for identifier 'burst_slot' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_axi_reader.v(50): WARNING: expression size 32 truncated to fit in target size 9 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_axi_reader.v(86): WARNING: expression size 10 truncated to fit in target size 9 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_axi_reader.v(105): WARNING: expression size 9 truncated to fit in target size 8 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\control\video_async_fifo.v(4): INFO: compiling module 'video_async_fifo(DATA_WIDTH=36,ADDR_BITS=8)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\control\video_async_fifo.v(12): INFO: extracting RAM for identifier 'memory' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\control\video_control_mailbox.v(4): INFO: compiling module 'video_control_mailbox(WIDTH=2)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v(3): INFO: compiling module 'snapshot_line_overlay' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v(21): INFO: extracting RAM for identifier 'bank0' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v(21): INFO: extracting RAM for identifier 'bank1' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v(21): INFO: extracting RAM for identifier 'bank2' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v(23): INFO: extracting RAM for identifier 'row_tag' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v(24): INFO: extracting RAM for identifier 'next_x' (VERI-2571)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v(27): WARNING: expression size 11 truncated to fit in target size 10 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v(30): WARNING: expression size 32 truncated to fit in target size 11 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v(31): WARNING: expression size 32 truncated to fit in target size 8 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v(33): WARNING: expression size 12 truncated to fit in target size 10 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\ui\video_ui_overlay.v(4): INFO: compiling module 'video_ui_overlay(FEATURE_MENU=1,INSPECTION_UI=1)' (VERI-1018)
+D:\FPGA_Edge_Detection\project\src\ui\video_ui_overlay.v(130): WARNING: expression size 32 truncated to fit in target size 8 (VERI-1209)
+D:\FPGA_Edge_Detection\project\src\ui\font_rom_8x16.v(4): INFO: compiling module 'font_rom_8x16' (VERI-1018)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(166): WARNING: net 'i_dqs_n_hi[1]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(167): WARNING: net 'i_dqs_n_lo[1]' does not have a driver (VDB-1002)
+D:\FPGA_Edge_Detection\project\Ti60_top.v(694): WARNING: input port 'SerialClk' is not connected on this instance (VDB-1013)
+INFO: Elaboration took 25.9944 seconds.
+INFO: 	Elaboration took 23.6875 seconds (approximately) in total CPU time.
+INFO: Elaboration virtual memory usage: begin = 63.66 MB, end = 3524.89 MB, delta = 3461.23 MB
+INFO: 	Elaboration peak virtual memory usage = 3792.87 MB
+INFO: Elaboration resident set memory usage: begin = 70.592 MB, end = 3337.13 MB, delta = 3266.54 MB
+INFO: 	Elaboration peak resident set memory usage = 3648.54 MB
+INFO: ***** Ending Elaboration ... *****
+[EFX-0000 INFO] ... Setting Synthesis Option: mode=speed
+INFO: ***** Beginning Reading Mapping Library ... *****
+-- Analyzing Verilog file 'C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(8): INFO: compiling module 'EFX_ADD' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(21): INFO: compiling module 'EFX_FF' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(38): INFO: compiling module 'EFX_COMB4' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(48): INFO: compiling module 'EFX_GBUFCE' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(57): INFO: compiling module 'EFX_LUT4' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(65): INFO: compiling module 'EFX_MULT' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(100): INFO: compiling module 'EFX_DSP48' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(156): INFO: compiling module 'EFX_DSP24' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(209): INFO: compiling module 'EFX_DSP12' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(262): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(322): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(394): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(499): INFO: compiling module 'RAMB5' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(561): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(653): INFO: compiling module 'EFX_RAM10' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(754): INFO: compiling module 'EFX_DPRAM10' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(884): INFO: compiling module 'EFX_SRL8' (VERI-1018)
+INFO: Reading Mapping Library took 0.0420568 seconds.
+INFO: 	Reading Mapping Library took 0.015625 seconds (approximately) in total CPU time.
+INFO: Reading Mapping Library virtual memory usage: begin = 3524.89 MB, end = 3524.89 MB, delta = 0 MB
+INFO: 	Reading Mapping Library peak virtual memory usage = 3792.87 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 3337.3 MB, end = 3337.31 MB, delta = 0.008 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 3648.54 MB
+INFO: ***** Ending Reading Mapping Library ... *****
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0256 WARNING] The primary output port 'csi_ctl0_o' wire 'csi_ctl0_o' is not driven.
+[EFX-0256 WARNING] The primary output port 'csi_ctl1_o' wire 'csi_ctl1_o' is not driven.
+[EFX-0256 WARNING] The primary output port 'csi_rxd0_rst_o' wire 'csi_rxd0_rst_o' is not driven.
+[EFX-0256 WARNING] The primary output port 'csi_rxd1_rst_o' wire 'csi_rxd1_rst_o' is not driven.
+[EFX-0256 WARNING] The primary output port 'csi_rxd2_rst_o' wire 'csi_rxd2_rst_o' is not driven.
+[EFX-0256 WARNING] The primary output port 'csi_rxd3_rst_o' wire 'csi_rxd3_rst_o' is not driven.
+[EFX-0200 WARNING] Removing redundant signal : Shift_Q7_Out[4][7]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Q7_Out[4][6]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Q7_Out[4][5]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Q7_Out[4][4]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Q7_Out[4][3]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Q7_Out[4][2]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Q7_Out[4][1]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Q7_Out[4][0]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Out[7]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Out[6]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Out[5]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Out[4]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Out[3]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Out[2]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Out[1]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Out[0]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Q7_Out[4][31]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Q7_Out[4][30]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Q7_Out[4][29]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] Removing redundant signal : Shift_Q7_Out[4][28]. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0200 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ram'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ram'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ram'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ram'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:3223)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ram'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ram'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wclk=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[0]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[1]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[2]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[3]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[4]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[5]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[6]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[7]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[8]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[9]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[10]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[11]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[12]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[13]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[14]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[15]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[16]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[17]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[18]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[19]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[20]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[21]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[22]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[23]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[24]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[25]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[26]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[27]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[28]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[29]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[30]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[31]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[32]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[33]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[34]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[35]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[36]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[37]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[38]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[39]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[40]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[41]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[42]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[43]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[44]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[45]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[46]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[47]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[48]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[49]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[50]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[51]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[52]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[53]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[54]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[55]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[56]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[57]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[58]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[59]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[60]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[61]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[62]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[63]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[64]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[65]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[66]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[67]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[68]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[69]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[70]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (wdata[71]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (waddr[0]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (waddr[1]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (waddr[2]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (waddr[3]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (waddr[4]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (waddr[5]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (waddr[6]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (waddr[7]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (waddr[8]=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (we=0).
+[EFX-0266 WARNING] Module Instance 'map_ram' input pin tied to constant (re=1).
+[EFX-0266 WARNING] Module Instance 'fifo_rdpush' input pin tied to constant (io_push_payload[0]=1).
+[EFX-0266 WARNING] Module Instance 'fifo_rdpush' input pin tied to constant (io_pop_ready=1).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'fifo_rd.a_rst_i'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'fifo_rd.clk_i'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0266 WARNING] Module Instance 'fifo_ack' input pin tied to constant (io_pop_ready=1).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'w_ar_fifo_rd_vaild'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'w_aw_fifo_rd_vaild'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:0)
+[EFX-0266 WARNING] Module Instance 'mux0' input pin tied to constant (b_rd_en=1).
+[EFX-0266 WARNING] Module Instance 'phase_u0' input pin tied to constant (pll_sel[0]=0).
+[EFX-0266 WARNING] Module Instance 'phase_u0' input pin tied to constant (pll_sel[1]=0).
+[EFX-0266 WARNING] Module Instance 'phase_u0' input pin tied to constant (pll_sel[2]=1).
+[EFX-0266 WARNING] Module Instance 'phase_u0' input pin tied to constant (pll_sel[3]=0).
+[EFX-0266 WARNING] Module Instance 'phase_u0' input pin tied to constant (pll_sel[4]=0).
+[EFX-0266 WARNING] Module Instance 'inst_arburst_fifo' input pin tied to constant (I_Wr_Data[2]=0).
+[EFX-0266 WARNING] Module Instance 'inst_arburst_fifo' input pin tied to constant (I_Wr_Data[3]=0).
+[EFX-0266 WARNING] Module Instance 'inst_arburst_fifo' input pin tied to constant (I_Wr_Data[4]=0).
+[EFX-0266 WARNING] Module Instance 'inst_arburst_fifo' input pin tied to constant (I_Wr_Data[5]=0).
+[EFX-0266 WARNING] Module Instance 'inst_arburst_fifo' input pin tied to constant (I_Wr_Data[6]=0).
+[EFX-0266 WARNING] Module Instance 'inst_arburst_fifo' input pin tied to constant (I_Wr_Data[7]=0).
+[EFX-0266 WARNING] Module Instance 'u_wr_addr_fifo' input pin tied to constant (I_Wr_Data[42]=0).
+[EFX-0266 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_ddr3_soft_controller.wr_data[127]'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:116)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_ddr3_soft_controller.wr_data[126]'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:116)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_ddr3_soft_controller.wr_data[125]'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:116)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_ddr3_soft_controller.wr_data[124]'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:116)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_ddr3_soft_controller.wr_data[123]'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:116)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_ddr3_soft_controller.wr_data[122]'. (D:\FPGA_Edge_Detection\project\ip\DdrCtrl\DdrCtrl.v:116)
+[EFX-0201 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'slot_id'. (D:\FPGA_Edge_Detection\project\src\axi\video_history_manager.v:16)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ram'. (D:\FPGA_Edge_Detection\project\ip\W0_FIFO_32\W0_FIFO_32.v:709)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ram'. (D:\FPGA_Edge_Detection\project\ip\R0_FIFO_8\R0_FIFO_8.v:719)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'r_ram'. (D:\FPGA_Edge_Detection\project\src\isp\Line_Shift_RAM_8Bit.v:64)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'r_ram'. (D:\FPGA_Edge_Detection\project\src\isp\Line_Shift_RAM_8Bit.v:64)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'memory'. (D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v:248)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'memory'. (D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v:248)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'memory'. (D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v:248)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'memory'. (D:\FPGA_Edge_Detection\project\src\isp\gray_3x3_window.v:248)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'line_bank0'. (D:\FPGA_Edge_Detection\project\src\isp\gray_edge_display.v:65)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'line_bank1'. (D:\FPGA_Edge_Detection\project\src\isp\gray_edge_display.v:66)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'memory'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_video_retime.v:20)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'metadata'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_video_retime.v:21)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'records'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:49)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'labels'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:50)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'parent'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:51)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'object_map'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:52)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'roots'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:53)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'area'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:54)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'bx0'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:55)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'bx1'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:55)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'by0'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:55)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'by1'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:55)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'seed_x'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:56)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'seed_y'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:56)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'sx'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:57)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'sy'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:57)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'sxx'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:58)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'syy'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:58)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'sxy'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:58)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'sx'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:32)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'sy'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:32)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'sxx'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:33)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'syy'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:33)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'sxy'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:33)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ids'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:33)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'age'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:34)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'px'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:35)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'py'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:35)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'px0'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:35)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'px1'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:35)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'py0'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:35)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'py1'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:35)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'pa'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:36)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'pang'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:37)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'pc'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:38)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'x'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:39)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'y'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:39)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'x0'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:39)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'x1'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:39)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'y0'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:39)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'y1'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:39)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'a'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:40)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ang'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:41)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'cs'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:42)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'selected'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:52)
+[EFX-0031 INFO] 'select_26' instance is encountered with don't-care(1'bx) input, rewiring to GND. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_compare.v:35)
+[EFX-0031 INFO] 'select_39' instance is encountered with don't-care(1'bx) input, rewiring to GND. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_compare.v:35)
+[EFX-0031 INFO] 'select_54' instance is encountered with don't-care(1'bx) input, rewiring to GND. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_compare.v:35)
+[EFX-0031 INFO] 'select_69' instance is encountered with don't-care(1'bx) input, rewiring to GND. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_compare.v:35)
+[EFX-0031 INFO] 'select_82' instance is encountered with don't-care(1'bx) input, rewiring to GND. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_compare.v:35)
+[EFX-0031 INFO] 'select_97' instance is encountered with don't-care(1'bx) input, rewiring to GND. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_compare.v:35)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ids'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:38)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'generation'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:39)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'detect_fid'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:39)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'stable'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:40)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'status'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:41)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'anchor'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:42)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'qdescriptor'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:45)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'qfid'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:46)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'qgen'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:46)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'qtime'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:46)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'qtid'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:47)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'qslot'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:48)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ids'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_result_history.v:17)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'data'. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_result_history.v:18)
+[EFX-0031 INFO] 'select_103' instance is encountered with don't-care(1'bx) input, rewiring to GND. (D:\FPGA_Edge_Detection\project\src\ui\snapshot_capture.v:88)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'memory'. (D:\FPGA_Edge_Detection\project\src\control\video_async_fifo.v:12)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'memory'. (D:\FPGA_Edge_Detection\project\src\control\video_async_fifo.v:12)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'memory'. (D:\FPGA_Edge_Detection\project\src\control\video_async_fifo.v:12)
+[EFX-0031 INFO] 'select_112' instance is encountered with don't-care(1'bx) input, rewiring to GND. (D:\FPGA_Edge_Detection\project\src\ui\snapshot_axi_reader.v:99)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'burst_data'. (D:\FPGA_Edge_Detection\project\src\ui\snapshot_axi_reader.v:38)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'burst_slot'. (D:\FPGA_Edge_Detection\project\src\ui\snapshot_axi_reader.v:39)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'memory'. (D:\FPGA_Edge_Detection\project\src\control\video_async_fifo.v:12)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'bank0'. (D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v:21)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'bank1'. (D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v:21)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'bank2'. (D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v:21)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'row_tag'. (D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v:23)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'next_x'. (D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v:24)
+[EFX-0031 INFO] 'select_274' instance is encountered with don't-care(1'bx) input, rewiring to GND. (D:\FPGA_Edge_Detection\project\src\ui\video_ui_overlay.v:236)
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 1s)
+[EFX-0000 INFO] ... NameSpace init begin
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s)
+[EFX-0000 INFO] ... Mapping design "Ti60_top"
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Ddr_Ctrl_Sc_Fifo_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=8,DATA_DEPTH=32)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Ddr_Ctrl_Sc_Fifo_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=8,DATA_DEPTH=32)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Ddr_Ctrl_Sc_Fifo_b3304f511b0d427589c3a2482540e4be(DATA_DEPTH=32)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Ddr_Ctrl_Sc_Fifo_b3304f511b0d427589c3a2482540e4be(DATA_DEPTH=32)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Ddr_Ctrl_Sc_Fifo_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=48,DATA_DEPTH=32)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Ddr_Ctrl_Sc_Fifo_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=48,DATA_DEPTH=32)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "native_mux_b3304f511b0d427589c3a2482540e4be" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "native_mux_b3304f511b0d427589c3a2482540e4be" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "reset_sub_b3304f511b0d427589c3a2482540e4be(OUT_RST_ACTIVE="LOW",CYCLE=4)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "reset_sub_b3304f511b0d427589c3a2482540e4be(OUT_RST_ACTIVE="LOW",CYCLE=4)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "reset_ctrl_b3304f511b0d427589c3a2482540e4be(NUM_RST=4,CYCLE=4,IN_RST_ACTIVE=4'b0,OUT_RST_ACTIVE=4'b0)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "reset_ctrl_b3304f511b0d427589c3a2482540e4be(NUM_RST=4,CYCLE=4,IN_RST_ACTIVE=4'b0,OUT_RST_ACTIVE=4'b0)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "reset_ctrl_b3304f511b0d427589c3a2482540e4be(CYCLE=4,IN_RST_ACTIVE=4'b0,OUT_RST_ACTIVE=4'b0)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "reset_ctrl_b3304f511b0d427589c3a2482540e4be(CYCLE=4,IN_RST_ACTIVE=4'b0,OUT_RST_ACTIVE=4'b0)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "buffercc_b3304f511b0d427589c3a2482540e4be" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "buffercc_b3304f511b0d427589c3a2482540e4be" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "buffercc_1_b3304f511b0d427589c3a2482540e4be" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "buffercc_1_b3304f511b0d427589c3a2482540e4be" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "streamfifocc64_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=32)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "streamfifocc64_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=32)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "streamfifocc64_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=144)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "streamfifocc64_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=144)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "streamfifocc64_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "streamfifocc64_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_b3304f511b0d427589c3a2482540e4be(WDATA_WIDTH=128,RDATA_WIDTH=128,OUTPUT_REG=0,RAM_MUX_RATIO=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_b3304f511b0d427589c3a2482540e4be(WDATA_WIDTH=128,RDATA_WIDTH=128,OUTPUT_REG=0,RAM_MUX_RATIO=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_b3304f511b0d427589c3a2482540e4be(WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_b3304f511b0d427589c3a2482540e4be(WIDTH=10)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_b3304f511b0d427589c3a2482540e4be(STAGE=2,WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_b3304f511b0d427589c3a2482540e4be(STAGE=2,WIDTH=10)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=2)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=2)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=3)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=3)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=4)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=4)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=6)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=6)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=7)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=7)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=8)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=8)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=9)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=9)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_b3304f511b0d427589c3a2482540e4be(WIDTH=10)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_b3304f511b0d427589c3a2482540e4be_renamed_due_excessive_length_1" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_b3304f511b0d427589c3a2482540e4be_renamed_due_excessive_length_1" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=128)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=128)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "streamfifocc64_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=2)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "streamfifocc64_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=2)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "streamfifocc64_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=52)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "streamfifocc64_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=52)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "user_dual_port_ram_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=72,OUTPUT_REG="FALSE",RAM_INIT_FILE="ddr3_controller.bin")" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "user_dual_port_ram_b3304f511b0d427589c3a2482540e4be(DATA_WIDTH=72,OUTPUT_REG="FALSE",RAM_INIT_FILE="ddr3_controller.bin")" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "ddr_3_controller_b3304f511b0d427589c3a2482540e4be" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "ddr_3_controller_b3304f511b0d427589c3a2482540e4be" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "controller_top_b3304f511b0d427589c3a2482540e4be" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "controller_top_b3304f511b0d427589c3a2482540e4be" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "reset_sub_b3304f511b0d427589c3a2482540e4be(OUT_RST_ACTIVE="LOW",CYCLE=5)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "reset_sub_b3304f511b0d427589c3a2482540e4be(OUT_RST_ACTIVE="LOW",CYCLE=5)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "reset_ctrl_b3304f511b0d427589c3a2482540e4be(NUM_RST=2,CYCLE=5,IN_RST_ACTIVE=2'b0,OUT_RST_ACTIVE=2'b0)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "reset_ctrl_b3304f511b0d427589c3a2482540e4be(NUM_RST=2,CYCLE=5,IN_RST_ACTIVE=2'b0,OUT_RST_ACTIVE=2'b0)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "phase_shift_b3304f511b0d427589c3a2482540e4be" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "phase_shift_b3304f511b0d427589c3a2482540e4be" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "top_b3304f511b0d427589c3a2482540e4be" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "top_b3304f511b0d427589c3a2482540e4be" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_ddr3_axi_b3304f511b0d427589c3a2482540e4be" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_ddr3_axi_b3304f511b0d427589c3a2482540e4be" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_ddr3_soft_controller_b3304f511b0d427589c3a2482540e4be" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_ddr3_soft_controller_b3304f511b0d427589c3a2482540e4be" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "DdrCtrl" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "DdrCtrl" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_snapshot_arbiter" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_snapshot_arbiter" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_timing_ctrl_reg16_dat8_wronly(CLK_FREQ=96000000,I2C_FREQ=50000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_timing_ctrl_reg16_dat8_wronly(CLK_FREQ=96000000,I2C_FREQ=50000)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "I2C_SC2210_19201080_4Lanes_Config" begin
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'LUT_DATA' select size : 9 output width: 24
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "I2C_SC2210_19201080_4Lanes_Config" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MIPIRx4LaneFre" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MIPIRx4LaneFre" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_reset_sync" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_reset_sync" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_control_mailbox(WIDTH=36)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_control_mailbox(WIDTH=36)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_control_mailbox(WIDTH=39)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_control_mailbox(WIDTH=39)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_history_manager" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_history_manager" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_a9cce908926e46bcad5318d1e7729cc0(MODE="FWFT",WR_DEPTH=2048,WDATA_WIDTH=32,RDATA_WIDTH=128,WADDR_WIDTH=11,OUTPUT_REG=0)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_a9cce908926e46bcad5318d1e7729cc0(MODE="FWFT",WR_DEPTH=2048,WDATA_WIDTH=32,RDATA_WIDTH=128,WADDR_WIDTH=11,OUTPUT_REG=0)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_a9cce908926e46bcad5318d1e7729cc0(WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_a9cce908926e46bcad5318d1e7729cc0(WIDTH=10)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_a9cce908926e46bcad5318d1e7729cc0(STAGE=3,WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_a9cce908926e46bcad5318d1e7729cc0(STAGE=3,WIDTH=10)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=2)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=2)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=3)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=3)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=4)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=4)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=6)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=6)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=7)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=7)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=8)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=8)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=9)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=9)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=10)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_a9cce908926e46bcad5318d1e7729cc0(WIDTH=12)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_a9cce908926e46bcad5318d1e7729cc0(WIDTH=12)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_a9cce908926e46bcad5318d1e7729cc0(STAGE=3,WIDTH=12)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_a9cce908926e46bcad5318d1e7729cc0(STAGE=3,WIDTH=12)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=11)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=11)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=12)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_a9cce908926e46bcad5318d1e7729cc0(WIDTH=12)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_a9cce908926e46bcad5318d1e7729cc0_renamed_due_excessive_length_3" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_a9cce908926e46bcad5318d1e7729cc0_renamed_due_excessive_length_3" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_a9cce908926e46bcad5318d1e7729cc0_renamed_due_excessive_length_2" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_a9cce908926e46bcad5318d1e7729cc0_renamed_due_excessive_length_2" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "W0_FIFO_32" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "W0_FIFO_32" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_9ec837445d8644a7b9e8068776e961ce(FAMILY="TITANIUM",MODE="FWFT",RD_DEPTH=8192,WDATA_WIDTH=128,RADDR_WIDTH=13,OUTPUT_REG=0,RAM_MUX_RATIO=16)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_9ec837445d8644a7b9e8068776e961ce(FAMILY="TITANIUM",MODE="FWFT",RD_DEPTH=8192,WDATA_WIDTH=128,RADDR_WIDTH=13,OUTPUT_REG=0,RAM_MUX_RATIO=16)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_9ec837445d8644a7b9e8068776e961ce(WIDTH=14)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_9ec837445d8644a7b9e8068776e961ce(WIDTH=14)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_9ec837445d8644a7b9e8068776e961ce(STAGE=3,WIDTH=14)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_9ec837445d8644a7b9e8068776e961ce(STAGE=3,WIDTH=14)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=2)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=2)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=3)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=3)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=4)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=4)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=6)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=6)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=7)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=7)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=8)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=8)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=9)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=9)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=10)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=11)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=11)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=12)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=12)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=13)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=13)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=14)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_9ec837445d8644a7b9e8068776e961ce(WIDTH=14)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_9ec837445d8644a7b9e8068776e961ce(WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_9ec837445d8644a7b9e8068776e961ce(WIDTH=10)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_9ec837445d8644a7b9e8068776e961ce(STAGE=3,WIDTH=10)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_9ec837445d8644a7b9e8068776e961ce(STAGE=3,WIDTH=10)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_9ec837445d8644a7b9e8068776e961ce_renamed_due_excessive_length_5" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_9ec837445d8644a7b9e8068776e961ce_renamed_due_excessive_length_5" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_9ec837445d8644a7b9e8068776e961ce_renamed_due_excessive_length_4" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_9ec837445d8644a7b9e8068776e961ce_renamed_due_excessive_length_4" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "R0_FIFO_8" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "R0_FIFO_8" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "axi4_ctrl(C_ID_LEN=4,C_RD_END_ADDR=2073600,C_W_WIDTH=32)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "axi4_ctrl(C_ID_LEN=4,C_RD_END_ADDR=2073600,C_W_WIDTH=32)" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "lcd_driver" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "lcd_driver" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Line_Shift_RAM_8Bit(DATA_DEPTH=14'b011110000000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Line_Shift_RAM_8Bit(DATA_DEPTH=14'b011110000000)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Line_Shift_RAM_8Bit(DATA_DEPTH=14'b011110000000,DELAY_NUM=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Line_Shift_RAM_8Bit(DATA_DEPTH=14'b011110000000,DELAY_NUM=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "VIP_Matrix_Generate_3X3_8Bit(IMG_HDISP=14'b011110000000,IMG_VDISP=14'b010000111000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "VIP_Matrix_Generate_3X3_8Bit(IMG_HDISP=14'b011110000000,IMG_VDISP=14'b010000111000)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "VIP_RAW8_RGB888(IMG_HDISP=1920,IMG_VDISP=1080)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "VIP_RAW8_RGB888(IMG_HDISP=1920,IMG_VDISP=1080)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "tmds_channel" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "tmds_channel" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "rgb2dvi(ENABLE_OSERDES=0)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "rgb2dvi(ENABLE_OSERDES=0)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_auto_levels(FRAME_PIXELS=2073600,INITIAL_RED_GAIN=10'b0101000000,INITIAL_BLUE_GAIN=10'b0101000000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_auto_levels(FRAME_PIXELS=2073600,INITIAL_RED_GAIN=10'b0101000000,INITIAL_BLUE_GAIN=10'b0101000000)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_register_writer" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_register_writer" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "sc2210_auto_exposure" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "sc2210_auto_exposure" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "mipi_center_crop_32(CROP_X=0,OUTPUT_WIDTH=1920)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "mipi_center_crop_32(CROP_X=0,OUTPUT_WIDTH=1920)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "debounce" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "debounce" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "key_event_controller" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "key_event_controller" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_control_mailbox(WIDTH=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_control_mailbox(WIDTH=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "feature_menu_controller(INSPECTION_MENU=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "feature_menu_controller(INSPECTION_MENU=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "key_debounce(CLK_FREQ_HZ=148800000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "key_debounce(CLK_FREQ_HZ=148800000)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "exboard_control" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "exboard_control" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "threshold_controller" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "threshold_controller" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "rgb888_to_gray" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "rgb888_to_gray" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_line_buffer_sync(DATA_WIDTH=32)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_line_buffer_sync(DATA_WIDTH=32)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_3x3_window(PIXEL_WIDTH=32)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_3x3_window(PIXEL_WIDTH=32)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "median_3x3" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "median_3x3" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_line_buffer_sync(DATA_WIDTH=41)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_line_buffer_sync(DATA_WIDTH=41)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_3x3_window(PIXEL_WIDTH=41)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_3x3_window(PIXEL_WIDTH=41)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gaussian_3x3" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gaussian_3x3" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "sobel_3x3" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "sobel_3x3" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_line_buffer_sync(DATA_WIDTH=46)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_line_buffer_sync(DATA_WIDTH=46)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_3x3_window(PIXEL_WIDTH=46)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_3x3_window(PIXEL_WIDTH=46)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "canny_nms" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "canny_nms" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "canny_double_threshold" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "canny_double_threshold" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_line_buffer_sync(DATA_WIDTH=35)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_line_buffer_sync(DATA_WIDTH=35)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_3x3_window(PIXEL_WIDTH=35)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_3x3_window(PIXEL_WIDTH=35)" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "canny_hysteresis" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "canny_hysteresis" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "canny_hysteresis(REPAIR_SHORT_GAP=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "canny_hysteresis(REPAIR_SHORT_GAP=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "canny_edge_pipeline(IMAGE_WIDTH=1920,ADDR_WIDTH=11,RUNTIME_MEDIAN=1,RUNTIME_CANNY=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "canny_edge_pipeline(IMAGE_WIDTH=1920,ADDR_WIDTH=11,RUNTIME_MEDIAN=1,RUNTIME_CANNY=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edge_video_pipeline(IMAGE_WIDTH=1920,ADDR_WIDTH=11,THRESHOLD=11'b01010000,RUNTIME_MEDIAN=1,RUNTIME_CANNY=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edge_video_pipeline(IMAGE_WIDTH=1920,ADDR_WIDTH=11,THRESHOLD=11'b01010000,RUNTIME_MEDIAN=1,RUNTIME_CANNY=1)" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edge_overlay(EDGE_G=8'b11111111,EDGE_B=8'b0,EXPAND_PIXELS=4)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edge_overlay(EDGE_G=8'b11111111,EDGE_B=8'b0,EXPAND_PIXELS=4)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_edge_display(SOURCE_WIDTH=1920,FIFO_START_LEVEL=1920)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "gray_edge_display(SOURCE_WIDTH=1920,FIFO_START_LEVEL=1920)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_video_retime" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_video_retime" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_rgb_adapter" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_rgb_adapter" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_foreground" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_foreground" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_run_encoder" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_run_encoder" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_components(MAX_RUNS=2048,MAX_LABELS=64)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_components(MAX_RUNS=2048,MAX_LABELS=64)" end (Real time : 8s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_geometry" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_geometry" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_angle_sincos" begin
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'n565' select size : 5 output width: 35
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_angle_sincos" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_axial_profile" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_axial_profile" end (Real time : 10s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_axial_frontend(OUTPUT_CYCLE=2450000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_axial_frontend(OUTPUT_CYCLE=2450000)" end (Real time : 11s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_object_tracker" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_object_tracker" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_axial_compare" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_axial_compare" end (Real time : 20s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_axial_manager" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_axial_manager" end (Real time : 17s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_axial_system" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_axial_system" end (Real time : 19s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_user_control" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_user_control" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_result_history(PAYLOAD_WIDTH=655)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_result_history(PAYLOAD_WIDTH=655)" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_formal_path" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "inspection_formal_path" end (Real time : 21s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "snapshot_capture" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "snapshot_capture" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_async_fifo(DATA_WIDTH=50)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_async_fifo(DATA_WIDTH=50)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "snapshot_axi_writer" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "snapshot_axi_writer" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_async_fifo(DATA_WIDTH=2,ADDR_BITS=2)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_async_fifo(DATA_WIDTH=2,ADDR_BITS=2)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_async_fifo(DATA_WIDTH=17,ADDR_BITS=2)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_async_fifo(DATA_WIDTH=17,ADDR_BITS=2)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "snapshot_axi_reader" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "snapshot_axi_reader" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_async_fifo(DATA_WIDTH=36,ADDR_BITS=8)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_async_fifo(DATA_WIDTH=36,ADDR_BITS=8)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_control_mailbox(WIDTH=2)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_control_mailbox(WIDTH=2)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "snapshot_line_overlay" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "snapshot_line_overlay" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "snapshot_system" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "snapshot_system" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "font_rom_8x16" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "font_rom_8x16" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_ui_overlay(FEATURE_MENU=1,INSPECTION_UI=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "video_ui_overlay(FEATURE_MENU=1,INSPECTION_UI=1)" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Ti60_top" begin
+[EFX-0683 WARNING] Ram-net 'u_inspection/engine/frontend/components/object_map' has incompatible control or address signals. (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:52)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_axi4_ctrl/u_ddr_frame_manager/slot_id' (192 bits) (D:\FPGA_Edge_Detection\project\src\axi\video_history_manager.v:16) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/retime/memory_2' (102400 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_video_retime.v:20) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/retime/metadata_2' (68 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_video_retime.v:21) because it failed ram decomposition synthesis.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/retime/metadata_3' (68 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_video_retime.v:21) because it failed ram decomposition synthesis.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/retime/metadata__D$2' (32 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_video_retime.v:21) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/retime/metadata__D$1' (36 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_video_retime.v:21) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/sxy' (2860 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:58) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/syy' (2860 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:58) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/sxx' (2860 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:58) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/sy' (2080 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:57) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/sx' (2080 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:57) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/seed_y' (715 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:56) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/seed_x' (715 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:56) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/by1' (715 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:55) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/by0' (715 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:55) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/bx1' (715 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:55) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/bx0' (715 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:55) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/area' (1430 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:54) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/roots' (28 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:53) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/object_map' (195 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:52) because write and read address port is not compatible for dual-ported ram.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/parent' (455 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:51) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/labels' (14336 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:50) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/components/records' (67584 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_components.v:49) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/sxy__D$b1' (48 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:33) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/sxy__D$12' (64 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:33) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/sxy__D$2' (64 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:33) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/syy__D$b1' (48 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:33) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/syy__D$12' (64 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:33) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/syy__D$2' (64 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:33) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/sxx__D$b1' (48 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:33) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/sxx__D$12' (64 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:33) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/sxx__D$2' (64 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:33) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/sy__D$1' (64 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:32) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/sy__D$2' (64 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:32) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/sx__D$1' (64 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:32) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/frontend/sx__D$2' (64 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_frontend.v:32) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/ids' (64 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:38) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/generation' (128 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:39) because it has async writer.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/detect_fid' (128 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:39) because it has async writer.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/stable' (32 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:40) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/status' (8 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:41) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/anchor' (7352 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:42) because it has async writer.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/qdescriptor' (7352 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:45) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/qfid' (128 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:46) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/qgen' (128 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:46) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/qtime' (128 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:46) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/qtid' (64 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:47) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/qslot' (8 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_axial_manager.v:48) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/selected' (12 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:52) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/cs' (128 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:42) because it has async writer.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/ang' (68 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:41) because it has async writer.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/a' (88 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:40) because it has async writer.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/y1' (44 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:39) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/y0' (44 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:39) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/x1' (44 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:39) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/x0' (44 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:39) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/y' (44 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:39) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/x' (44 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:39) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/pc' (128 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:38) because it has async writer.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/pang' (68 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:37) because it has async writer.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/pa' (88 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:36) because it has async writer.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/py1' (44 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:35) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/py0' (44 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:35) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/px1' (44 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:35) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/px0' (44 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:35) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/py' (44 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:35) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/px' (44 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:35) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/age' (32 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:34) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/engine/manager/tracker/ids' (64 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_object_tracker.v:33) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/history/ids' (256 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_result_history.v:17) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_inspection/history/data' (5240 bits) (D:\FPGA_Edge_Detection\project\src\inspection\inspection_result_history.v:18) because read port is not synchronous.
+[EFX-0657 WARNING] Mapping into logic memory block 'u_snapshot_system/u_write_ack/memory' (8 bits) (D:\FPGA_Edge_Detection\project\src\control\video_async_fifo.v:12) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_snapshot_system/u_overlay/row_tag' (48 bits) (D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v:23) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'u_snapshot_system/u_overlay/next_x' (54 bits) (D:\FPGA_Edge_Detection\project\src\ui\snapshot_line_overlay.v:24) because size is too small (<=64)
+[EFX-0000 INFO] ... Clock Enable Synthesis Performed on 45001 flops.
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Ti60_top" end (Real time : 364s)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 8s)
+[EFX-0000 INFO] ... Flat synthesis begin
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 3s)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 5s)
+[EFX-0000 INFO] ... Check and break combinational loops begin
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 4s)
+[EFX-0000 INFO] ... SOP modeling begin
+[EFX-0000 INFO] ... SOP modeling end (Real time : 19s)
+[EFX-0000 INFO] ... LUT mapping begin
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 300688, ed: 1031611, lv: 46, pw: 479933.38
+[EFX-0000 INFO] ... LUT mapping end (Real time : 2225s)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 14s)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 88s)
+INFO: ***** Beginning VDB Netlist Checker ... *****
+WARNING: Input/Inout Port clk_24m is unconnected and will be removed
+WARNING: Input/Inout Port clk_pixel_10x is unconnected and will be removed
+WARNING: Input/Inout Port csi_ctl0_i is unconnected and will be removed
+WARNING: Input/Inout Port csi_ctl1_i is unconnected and will be removed
+WARNING: Input/Inout Port csi_scl_i is unconnected and will be removed
+WARNING: Input/Inout Port csi_rxd1_lp_n_i is unconnected and will be removed
+WARNING: Input/Inout Port csi_rxd1_lp_p_i is unconnected and will be removed
+WARNING: Input/Inout Port csi_rxd2_lp_p_i is unconnected and will be removed
+WARNING: Input/Inout Port csi_rxd2_lp_n_i is unconnected and will be removed
+WARNING: Input/Inout Port csi_rxd3_lp_p_i is unconnected and will be removed
+WARNING: Input/Inout Port csi_rxd3_lp_n_i is unconnected and will be removed
+WARNING: Input/Inout Port ex_key_up_n is unconnected and will be removed
+WARNING: Input/Inout Port ex_key_down_n is unconnected and will be removed
+WARNING: CE port of EFX_DSP48 instance u_video_auto_levels/mult_39 is permanently disabled
+WARNING: CE port of EFX_DSP48 instance u_video_auto_levels/mult_38 is permanently disabled
+INFO: Found 15 warnings in the post-synthesis netlist.
+INFO: VDB Netlist Checker took 12.3506 seconds.
+INFO: 	VDB Netlist Checker took 12.2188 seconds (approximately) in total CPU time.
+INFO: VDB Netlist Checker virtual memory usage: begin = 7156.42 MB, end = 7156.42 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak virtual memory usage = 7696.95 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 6823.74 MB, end = 6823.8 MB, delta = 0.06 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 7352.54 MB
+INFO: ***** Ending VDB Netlist Checker ... *****
+-- Writing netlist 'Ti60_top' to Verilog file 'outflow\Ti60_Edge_Detection.map.v' (VDB-1030)
+[EFX-0000 INFO] Resource Summary 
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] EFX_ADD         : 	6170
+[EFX-0000 INFO] EFX_LUT4        : 	299365
+[EFX-0000 INFO] EFX_DSP48       : 	53
+[EFX-0000 INFO] EFX_FF          : 	159625
+[EFX-0000 INFO] EFX_SRL8        : 	588
+[EFX-0000 INFO] EFX_RAM10       : 	163
+[EFX-0000 INFO] =============================== 

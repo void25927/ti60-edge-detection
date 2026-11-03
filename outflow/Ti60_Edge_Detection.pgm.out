@@ -1,0 +1,32 @@
+
+Efinix FPGA Bitstream Generator.
+Version: 2023.2.307.5.10 
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+Compiled: May 19 2024.
+
+Using source file "D:/FPGA_Edge_Detection/project/work_pnr/Ti60_Edge_Detection.lbf"
+Generating HEX programming file for device "Ti60F225", family "Titanium"
+Using periphery source file "D:/FPGA_Edge_Detection/project/outflow/Ti60_Edge_Detection.lpf"
+Generating bit file: "D:/FPGA_Edge_Detection/project/outflow/Ti60_Edge_Detection.bit"
+HEX Generation Options Summary:
+	Listing options specified to bitstream generation:
+	bitstream_compression                    = on
+	oscillator_clock_divider                 = DIV2
+	enable_external_master_clock             = off
+	spi_low_power_mode                       = off
+	active_capture_clk_edge                  = negedge
+	enable_remote_update                     = off
+	release_tri_then_reset                   = on
+	enable_seu_crc_check                     = off
+	seu_mode                                 = automatic
+	seu_wait_interval                        = 0xFFFFFF
+	jtag_usercode                            = 0xFFFFFFFF
+	io_weak_pullup                           = on
+Finished generating "D:/FPGA_Edge_Detection/project/outflow/Ti60_Edge_Detection.hex"
+Efinity Bitstream Generator took 8.73021 seconds.
+	Efinity Bitstream Generator took 7.25 seconds (approximately) in total CPU time.
+Efinity Bitstream Generator virtual memory usage: begin = 2.584 MB, end = 25.28 MB, delta = 22.696 MB
+	Efinity Bitstream Generator peak virtual memory usage = 138.3 MB
+Efinity Bitstream Generator resident set memory usage: begin = 9.544 MB, end = 34.876 MB, delta = 25.332 MB
+	Efinity Bitstream Generator peak resident set memory usage = 143.608 MB

@@ -1,0 +1,377 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307.5.10 
+Date: Thu Oct 29 19:21:11 2026
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+ 
+Family: Titanium 
+Device: Ti60F225
+Top-level Entity Name: Ti60_Edge_Detection
+Elapsed time for packing: 0 hours 0 minutes 0 seconds
+
+---------- Resource Summary (begin) ----------
+Inputs: 85 / 1703 (4.99%)
+Outputs: 258 / 2267 (11.38%)
+Global Clocks (GBUF): 8 / 32 (25.00%)
+Regional Clocks (RBUF): 0 / 32 (0.00%)
+	RBUF: Core: 0 / 16 (0.00%)
+	RBUF: Periphery: 0 / 8 (0.00%)
+	RBUF: Multi-Region: 0 / 8 (0.00%)
+XLRs: 56749 / 60800 (93.34%)
+	XLRs needed for Logic: 27455 / 60800 (45.16%)
+	XLRs needed for Logic + FF: 11505 / 60800 (18.92%)
+	XLRs needed for Adder: 4044 / 60800 (6.65%)
+	XLRs needed for Adder + FF: 834 / 60800 (1.37%)
+	XLRs needed for FF: 12323 / 60800 (20.27%)
+	XLRs needed for SRL8: 588 / 14720 (3.99%)
+	XLRs needed for SRL8+FF: 0 / 14720 (0.00%)
+	XLRs needed for Routing: 0 / 60800 (0.00%)
+Memory Blocks: 249 / 256 (97.27%)
+DSP Blocks: 43 / 160 (26.88%)
+---------- Resource Summary (end) ----------
+
+
+---------- DSP Packer Summary (begin) ----------
+
+	DSP48 blocks required to legally pack design: 43
+	DSP48 blocks recoverable by optimizing:
+		-> DSP24/12 control signals & parameters: 0
+	Best case scenario DSP count after optimizing: 43
+
+---------- DSP Packer Summary (end) ----------
+
+
+---------- DSP48 Block Information (begin) ----------
+
++---------------------------------------------+--------+--------+---------+-------+--------------+-------+-------------+
+|                    NAME                     |  MODE  | SIGNED | SHIFTER | M_SEL |    N_SEL     | W_SEL | CASCOUT_SEL |
++---------------------------------------------+--------+--------+---------+-------+--------------+-------+-------------+
+|         u_video_auto_levels/mult_39         | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|    u_inspection/engine/target/mult_1117     | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|    u_inspection/engine/target/mult_1118     | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|    u_inspection/engine/target/mult_1119     | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|  u_inspection/engine/geometry/n1089_pp_0x0  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|  u_inspection/engine/geometry/n1156_pp_0x0  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|  u_inspection/engine/geometry/n1223_pp_0x0  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|  u_inspection/engine/geometry/n1290_pp_0x0  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|  u_inspection/engine/geometry/n1355_pp_0x0  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|  u_inspection/engine/geometry/n1420_pp_0x0  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|  u_inspection/engine/geometry/n1089_pp_0x1  | NORMAL | false  |  false  |   P   |    CASCIN    |   X   |      W      |
+|  u_inspection/engine/geometry/n1089_pp_0x2  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|  u_inspection/engine/geometry/n1089_pp_1x0  | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      W      |
+|  u_inspection/engine/geometry/n1089_pp_1x1  | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      P      |
+|  u_inspection/engine/geometry/n1089_pp_1x2  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|  u_inspection/engine/geometry/n1156_pp_0x1  | NORMAL | false  |  false  |   P   |    CASCIN    |   X   |      W      |
+|  u_inspection/engine/geometry/n1156_pp_0x2  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|  u_inspection/engine/geometry/n1156_pp_1x0  | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      W      |
+|  u_inspection/engine/geometry/n1156_pp_1x1  | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      P      |
+|  u_inspection/engine/geometry/n1156_pp_1x2  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|  u_inspection/engine/geometry/n1223_pp_0x1  | NORMAL | false  |  false  |   P   |    CASCIN    |   X   |      W      |
+|  u_inspection/engine/geometry/n1223_pp_0x2  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|  u_inspection/engine/geometry/n1223_pp_1x0  | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      W      |
+|  u_inspection/engine/geometry/n1223_pp_1x1  | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      P      |
+|  u_inspection/engine/geometry/n1223_pp_1x2  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|  u_inspection/engine/geometry/n1290_pp_0x1  | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      W      |
+|  u_inspection/engine/geometry/n1290_pp_1x0  | NORMAL | false  |  false  |   P   |    CASCIN    |   X   |      W      |
+|  u_inspection/engine/geometry/n1290_pp_1x1  | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      P      |
+|  u_inspection/engine/geometry/n1355_pp_0x1  | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      W      |
+|  u_inspection/engine/geometry/n1355_pp_1x0  | NORMAL | false  |  false  |   P   |    CASCIN    |   X   |      W      |
+|  u_inspection/engine/geometry/n1355_pp_1x1  | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      P      |
+|  u_inspection/engine/geometry/n1420_pp_0x1  | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      W      |
+|  u_inspection/engine/geometry/n1420_pp_1x0  | NORMAL | false  |  false  |   P   |    CASCIN    |   X   |      W      |
+|  u_inspection/engine/geometry/n1420_pp_1x1  | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      P      |
+| u_inspection/engine/projector/n13279_pp_0x0 | NORMAL |  true  |  false  |   P   |      C       |   P   |      P      |
+| u_inspection/engine/projector/n13279_pp_1x0 | NORMAL |  true  |  false  |   P   | CASCIN_ASR18 |   X   |      P      |
+| u_inspection/engine/projector/n13317_pp_0x0 | NORMAL |  true  |  false  |   P   |      C       |   P   |      P      |
+| u_inspection/engine/projector/n13317_pp_1x0 | NORMAL |  true  |  false  |   P   | CASCIN_ASR18 |   X   |      P      |
+| u_inspection/engine/projector/n13355_pp_0x0 | NORMAL |  true  |  false  |   P   |      C       |   P   |      P      |
+| u_inspection/engine/projector/n13355_pp_1x0 | NORMAL |  true  |  false  |   P   | CASCIN_ASR18 |   X   |      P      |
+| u_inspection/engine/projector/n13393_pp_0x0 | NORMAL |  true  |  false  |   P   |      C       |   P   |      P      |
+| u_inspection/engine/projector/n13393_pp_1x0 | NORMAL |  true  |  false  |   P   | CASCIN_ASR18 |   X   |      P      |
+|         u_video_auto_levels/mult_38         | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
++---------------------------------------------+--------+--------+---------+-------+--------------+-------+-------------+
+
+----------- DSP48 Block Information (end) ----------
+
+
+---------- Simple Dual Port RAM Information (begin) ----------
+
++-----------------------------------------------------------------------------------------------------------------------+------+------------+-------------+--------------+------------+
+|                                                         NAME                                                          | MODE | READ_WIDTH | WRITE_WIDTH |  WRITE_MODE  | OUTPUT_REG |
++-----------------------------------------------------------------------------------------------------------------------+------+------------+-------------+--------------+------------+
+|          ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/ram__D$2          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|          ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/ram__D$2          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|          ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/ram__D$1          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|          ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$2          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|          ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/ram__D$1          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$12          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$b12         | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$c12         | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$d12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$e12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$f12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$g1          | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ram/ram__D$c12  | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ram/ram__D$f1   | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ram/ram__D$12   | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ram/ram__D$d12  | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ram/ram__D$e12  | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ram/ram__D$b12  | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|   ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ram/ram__D$2   | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|            ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/ram            | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|          ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/ram__D$2          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/ram__D$12          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/ram__D$b1          | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+| ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/map_ram/ram__D$b12 | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+| ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/map_ram/ram__D$12  | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/map_ram/ram__D$2  | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+| ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/map_ram/ram__D$c1  | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ram/ram__D$2                      | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|                     u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ram/ram__D$e12                     | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|                     u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ram/ram__D$12                      | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|                     u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ram/ram__D$b12                     | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|                     u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ram/ram__D$d12                     | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|                     u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ram/ram__D$f12                     | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|                     u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ram/ram__D$g1                      | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|                     u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ram/ram__D$c12                     | SDP  |     16     |      4      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$b12                      | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$d12                      | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$g1                       | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$f12                      | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$12                       | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$c12                      | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                       u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$2                       | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$e12                      | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                      bayer2rgb/u_VIP_Matrix_Generate_3X3_8Bit/u0_Line_Shift_RAM_8Bit/r_ram__D$1                       | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                      bayer2rgb/u_VIP_Matrix_Generate_3X3_8Bit/u0_Line_Shift_RAM_8Bit/r_ram__D$2                       | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                      bayer2rgb/u_VIP_Matrix_Generate_3X3_8Bit/u1_Line_Shift_RAM_8Bit/r_ram__D$2                       | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                      bayer2rgb/u_VIP_Matrix_Generate_3X3_8Bit/u1_Line_Shift_RAM_8Bit/r_ram__D$1                       | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_median/u_line_buffer_1/memory__D$b12                  | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_median/u_line_buffer_1/memory__D$2                   | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_median/u_line_buffer_1/memory__D$12                   | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_median/u_line_buffer_1/memory__D$c12                  | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_median/u_line_buffer_1/memory__D$d12                  | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_median/u_line_buffer_1/memory__D$e12                  | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_median/u_line_buffer_1/memory__D$f1                   | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_median/u_line_buffer_2/memory__D$2                   | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_median/u_line_buffer_2/memory__D$12                   | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                 u_edge_video_pipeline/g_canny.u_canny/u_window_gaussian/u_line_buffer_1/memory__D$b12                 | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_gaussian/u_line_buffer_1/memory__D$2                  | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                 u_edge_video_pipeline/g_canny.u_canny/u_window_gaussian/u_line_buffer_1/memory__D$12                  | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                 u_edge_video_pipeline/g_canny.u_canny/u_window_gaussian/u_line_buffer_1/memory__D$c12                 | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                 u_edge_video_pipeline/g_canny.u_canny/u_window_gaussian/u_line_buffer_1/memory__D$d12                 | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                 u_edge_video_pipeline/g_canny.u_canny/u_window_gaussian/u_line_buffer_1/memory__D$e12                 | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                 u_edge_video_pipeline/g_canny.u_canny/u_window_gaussian/u_line_buffer_1/memory__D$f12                 | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                 u_edge_video_pipeline/g_canny.u_canny/u_window_gaussian/u_line_buffer_1/memory__D$g12                 | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                 u_edge_video_pipeline/g_canny.u_canny/u_window_gaussian/u_line_buffer_1/memory__D$h1                  | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                 u_edge_video_pipeline/g_canny.u_canny/u_window_gaussian/u_line_buffer_2/memory__D$h1                  | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_gaussian/u_line_buffer_2/memory__D$2                  | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                 u_edge_video_pipeline/g_canny.u_canny/u_window_gaussian/u_line_buffer_2/memory__D$12                  | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_sobel/u_line_buffer_1/memory__D$b12                   | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_sobel/u_line_buffer_1/memory__D$2                    | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_sobel/u_line_buffer_1/memory__D$12                   | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_sobel/u_line_buffer_1/memory__D$c12                   | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_sobel/u_line_buffer_1/memory__D$d12                   | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_sobel/u_line_buffer_1/memory__D$e12                   | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_sobel/u_line_buffer_1/memory__D$f12                   | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                  u_edge_video_pipeline/g_canny.u_canny/u_window_sobel/u_line_buffer_1/memory__D$g12                   | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_sobel/u_line_buffer_1/memory__D$h1                   | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_sobel/u_line_buffer_2/memory__D$h1                   | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_sobel/u_line_buffer_2/memory__D$2                    | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_sobel/u_line_buffer_2/memory__D$12                   | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_nms/u_line_buffer_1/memory__D$b12                    | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                    u_edge_video_pipeline/g_canny.u_canny/u_window_nms/u_line_buffer_1/memory__D$2                     | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                    u_edge_video_pipeline/g_canny.u_canny/u_window_nms/u_line_buffer_1/memory__D$12                    | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_nms/u_line_buffer_1/memory__D$c12                    | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_nms/u_line_buffer_1/memory__D$d12                    | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_nms/u_line_buffer_1/memory__D$e12                    | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_nms/u_line_buffer_1/memory__D$f12                    | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_nms/u_line_buffer_1/memory__D$g12                    | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_nms/u_line_buffer_1/memory__D$h12                    | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                    u_edge_video_pipeline/g_canny.u_canny/u_window_nms/u_line_buffer_1/memory__D$i1                    | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                   u_edge_video_pipeline/g_canny.u_canny/u_window_nms/u_line_buffer_2/memory__D$b12                    | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                    u_edge_video_pipeline/g_canny.u_canny/u_window_nms/u_line_buffer_2/memory__D$2                     | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                    u_edge_video_pipeline/g_canny.u_canny/u_window_nms/u_line_buffer_2/memory__D$12                    | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                    u_edge_video_pipeline/g_canny.u_canny/u_window_nms/u_line_buffer_2/memory__D$i1                    | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis1/u_line_buffer_1/memory__D$b12                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis1/u_line_buffer_1/memory__D$2                 | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis1/u_line_buffer_1/memory__D$12                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis1/u_line_buffer_1/memory__D$c12                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis1/u_line_buffer_1/memory__D$d12                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis1/u_line_buffer_1/memory__D$e12                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis1/u_line_buffer_1/memory__D$f1                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis1/u_line_buffer_2/memory__D$2                 | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis1/u_line_buffer_2/memory__D$f1                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis2/u_line_buffer_1/memory__D$b12                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis2/u_line_buffer_1/memory__D$2                 | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis2/u_line_buffer_1/memory__D$12                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis2/u_line_buffer_1/memory__D$c12                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis2/u_line_buffer_1/memory__D$d12                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis2/u_line_buffer_1/memory__D$e12                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis2/u_line_buffer_1/memory__D$f1                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis2/u_line_buffer_2/memory__D$2                 | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                u_edge_video_pipeline/g_canny.u_canny/u_window_hysteresis2/u_line_buffer_2/memory__D$f1                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_first/payload_memory__D$b12               | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_first/payload_memory__D$12                | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|       u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_first/u_edge_window/u_line_buffer_1/memory        | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|       u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_first/u_edge_window/u_line_buffer_2/memory        | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_first/payload_memory__D$2                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_first/payload_memory__D$c12               | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_first/payload_memory__D$d12               | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_first/payload_memory__D$e12               | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_first/payload_memory__D$f1                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|              u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_second/payload_memory__D$b12               | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_second/payload_memory__D$12               | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|       u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_second/u_edge_window/u_line_buffer_1/memory       | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|       u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_second/u_edge_window/u_line_buffer_2/memory       | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_second/payload_memory__D$2                | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|              u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_second/payload_memory__D$c12               | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|              u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_second/payload_memory__D$d12               | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|              u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_second/payload_memory__D$e12               | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|               u_edge_video_pipeline/g_canny.u_canny/u_morphology/g_double.u_second/payload_memory__D$f1               | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                          u_gray_edge_display/line_bank0__D$2                                          | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                          u_gray_edge_display/line_bank1__D$2                                          | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank0__D$12                                          | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank1__D$12                                          | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank0__D$b12                                         | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank0__D$c12                                         | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank0__D$d12                                         | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank0__D$e12                                         | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank0__D$f12                                         | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank0__D$g12                                         | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank0__D$h1                                          | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank1__D$b12                                         | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank1__D$c12                                         | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank1__D$d12                                         | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank1__D$e12                                         | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank1__D$f12                                         | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank1__D$g12                                         | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                         u_gray_edge_display/line_bank1__D$h1                                          | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                       u_inspection/engine/capture/records__D$12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$E12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                       u_inspection/engine/capture/records__D$G1                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$F12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$C12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$y12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$B12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$A12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$z12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$D12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$x12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$w12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$v12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$u12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$t12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$s12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$c12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$d12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$e12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$f12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$g12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$h12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$i12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$j12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$k12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$l12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$m12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$n12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$o12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$p12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$q12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$r12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                       u_inspection/engine/capture/records__D$2                                        | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/capture/records__D$b12                                       | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                       u_inspection/engine/target/selected_runs                                        | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                        u_inspection/engine/target/labels__D$12                                        | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                        u_inspection/engine/target/labels__D$2                                         | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                        u_inspection/engine/target/labels__D$b1                                        | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                      u_inspection/engine/compare/template_width                                       | SDP  |     16     |     16      |  READ_FIRST  |   false    |
+|                                        u_inspection/engine/compare/scene_width                                        | SDP  |     16     |     16      |  READ_FIRST  |   false    |
+|                                        u_displayed_learning/cache/memory__D$2                                         | SDP  |     20     |     20      |  READ_FIRST  |   false    |
+|                                        u_displayed_learning/cache/memory__D$12                                        | SDP  |     20     |     20      |  READ_FIRST  |   false    |
+|                                       u_displayed_learning/cache/memory__D$b12                                        | SDP  |     20     |     20      |  READ_FIRST  |   false    |
+|                                        u_displayed_learning/cache/memory__D$c1                                        | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                       u_paired_display/write_fifo/memory__D$12                                        | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                        u_paired_display/write_fifo/memory__D$2                                        | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/write_fifo/memory__D$c12                                       | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/write_fifo/memory__D$d12                                       | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/write_fifo/memory__D$e12                                       | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/write_fifo/memory__D$f12                                       | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/write_fifo/memory__D$g12                                       | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/write_fifo/memory__D$h12                                       | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/write_fifo/memory__D$i12                                       | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/write_fifo/memory__D$j12                                       | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/write_fifo/memory__D$k12                                       | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/write_fifo/memory__D$l1                                        | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/write_fifo/memory__D$b12                                       | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                        u_paired_display/read_fifo/memory__D$12                                        | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                                        u_paired_display/read_fifo/memory__D$2                                         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/read_fifo/memory__D$c12                                        | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/read_fifo/memory__D$d12                                        | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/read_fifo/memory__D$e12                                        | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                                        u_paired_display/read_fifo/memory__D$f1                                        | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                       u_paired_display/read_fifo/memory__D$b12                                        | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                                      u_snapshot_system/u_write_fifo/memory__D$2                                       | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                                      u_snapshot_system/u_write_fifo/memory__D$12                                      | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                                      u_snapshot_system/u_write_fifo/memory__D$b1                                      | SDP  |     10     |     10      | READ_UNKNOWN |   false    |
+|                                        u_snapshot_system/u_read_request/memory                                        | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                                     u_snapshot_system/u_reader/burst_data__D$e12                                      | SDP  |     20     |     20      |  READ_FIRST  |   false    |
+|                                      u_snapshot_system/u_reader/burst_data__D$12                                      | SDP  |     16     |     16      |  READ_FIRST  |   false    |
+|                                      u_snapshot_system/u_reader/burst_data__D$2                                       | SDP  |     16     |     16      |  READ_FIRST  |   false    |
+|                                     u_snapshot_system/u_reader/burst_data__D$c12                                      | SDP  |     20     |     20      |  READ_FIRST  |   false    |
+|                                     u_snapshot_system/u_reader/burst_data__D$d12                                      | SDP  |     20     |     20      |  READ_FIRST  |   false    |
+|                                         u_snapshot_system/u_reader/burst_slot                                         | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                      u_snapshot_system/u_reader/burst_data__D$f1                                      | SDP  |     20     |     20      |  READ_FIRST  |   false    |
+|                                      u_snapshot_system/u_read_pixels/memory__D$2                                      | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|                                     u_snapshot_system/u_reader/burst_data__D$b12                                      | SDP  |     16     |     16      |  READ_FIRST  |   false    |
+|                                      u_snapshot_system/u_read_pixels/memory__D$1                                      | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                                        u_snapshot_system/u_overlay/bank0__D$1                                         | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                                        u_snapshot_system/u_overlay/bank2__D$2                                         | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                                        u_snapshot_system/u_overlay/bank1__D$1                                         | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                                        u_snapshot_system/u_overlay/bank2__D$1                                         | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                                        u_snapshot_system/u_overlay/bank0__D$2                                         | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                                        u_snapshot_system/u_overlay/bank1__D$2                                         | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                                   u_video_ui_overlay/g_modern.renderer/strings__D$1                                   | SDP  |     4      |      4      | READ_UNKNOWN |   false    |
+|                                   u_video_ui_overlay/g_modern.renderer/font__D$b12                                    | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|                                   u_video_ui_overlay/g_modern.renderer/strings__D$2                                   | SDP  |     5      |      5      | READ_UNKNOWN |   false    |
+|                                    u_video_ui_overlay/g_modern.renderer/font__D$2                                     | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|                                   u_video_ui_overlay/g_modern.renderer/font__D$c12                                    | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|                                   u_video_ui_overlay/g_modern.renderer/font__D$d12                                    | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|                                   u_video_ui_overlay/g_modern.renderer/font__D$e12                                    | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|                                   u_video_ui_overlay/g_modern.renderer/font__D$f12                                    | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|                                   u_video_ui_overlay/g_modern.renderer/font__D$g12                                    | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|                                   u_video_ui_overlay/g_modern.renderer/font__D$i12                                    | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|                                   u_video_ui_overlay/g_modern.renderer/font__D$j12                                    | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|                                   u_video_ui_overlay/g_modern.renderer/font__D$k12                                    | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|                                   u_video_ui_overlay/g_modern.renderer/font__D$l12                                    | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|                                   u_video_ui_overlay/g_modern.renderer/font__D$m12                                    | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|                                   u_video_ui_overlay/g_modern.renderer/font__D$n12                                    | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|                                    u_video_ui_overlay/g_modern.renderer/font__D$o1                                    | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|                                    u_video_ui_overlay/g_modern.renderer/font__D$12                                    | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
++-----------------------------------------------------------------------------------------------------------------------+------+------------+-------------+--------------+------------+
+
+----------- Simple Dual Port RAM Information (end) ----------
+
+
+---------- IO Interface Summary (begin) ----------
+
++------------------------+--------------+
+| Missing Interface Pins | Input/Output |
++------------------------+--------------+
+|       csi_scl_i        |    Input     |
+|       csi_ctl0_i       |    Input     |
+|       csi_ctl1_i       |    Input     |
+|     ex_key_down_n      |    Input     |
+|      ex_key_up_n       |    Input     |
+|    csi_rxd2_lp_p_i     |    Input     |
+|    csi_rxd2_lp_n_i     |    Input     |
+|    csi_rxd3_lp_p_i     |    Input     |
+|    csi_rxd3_lp_n_i     |    Input     |
+|    csi_rxd1_lp_p_i     |    Input     |
+|    csi_rxd1_lp_n_i     |    Input     |
++------------------------+--------------+
+
+----------- IO Interface Summary (end) ----------
+
+Elapsed time for placement: 0 hours 10 minutes 5 seconds

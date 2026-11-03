@@ -1,0 +1,859 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307.5.10 
+Compiled: May 19 2024.
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Titanium", Device "Ti60F225" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "D:/FPGA_Edge_Detection/project/outflow/Ti60_Edge_Detection.vdb".
+***** Beginning VDB Netlist Checker ... *****
+VDB Netlist Checker took 0.503426 seconds.
+	VDB Netlist Checker took 0.515625 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 169.036 MB, end = 169.036 MB, delta = 0 MB
+	VDB Netlist Checker peak virtual memory usage = 174.168 MB
+VDB Netlist Checker resident set memory usage: begin = 177.108 MB, end = 177.388 MB, delta = 0.28 MB
+	VDB Netlist Checker peak resident set memory usage = 181.512 MB
+***** Ending VDB Netlist Checker ... *****
+Reading core interface constraints from 'D:/FPGA_Edge_Detection/project/outflow/Ti60_Edge_Detection.interface.csv'.
+Successfully processed interface constraints file "D:/FPGA_Edge_Detection/project/outflow/Ti60_Edge_Detection.interface.csv".
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+logical_block #0(clk_24m) has no fanout.
+Removing input.
+logical_block #149(csi_ctl0_i) has no fanout.
+Removing input.
+logical_block #152(csi_ctl1_i) has no fanout.
+Removing input.
+logical_block #155(csi_scl_i) has no fanout.
+Removing input.
+logical_block #180(csi_rxd1_lp_n_i) has no fanout.
+Removing input.
+logical_block #181(csi_rxd1_lp_p_i) has no fanout.
+Removing input.
+logical_block #193(csi_rxd2_lp_p_i) has no fanout.
+Removing input.
+logical_block #194(csi_rxd2_lp_n_i) has no fanout.
+Removing input.
+logical_block #206(csi_rxd3_lp_p_i) has no fanout.
+Removing input.
+logical_block #207(csi_rxd3_lp_n_i) has no fanout.
+Removing input.
+logical_block #218(ex_key_up_n) has no fanout.
+Removing input.
+logical_block #219(ex_key_down_n) has no fanout.
+Removing input.
+Pass 0: Swept away 12 blocks with no fanout.
+Pass 1: Swept away 0 nets with no fanout.
+Pass 1: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 12 blocks in total.
+Removed 0 LUT buffers.
+Sweeped away 12 nodes.
+Successfully created VPR logical netlist from Verific binary DataBase file "D:/FPGA_Edge_Detection/project/outflow/Ti60_Edge_Detection.vdb".
+Netlist pre-processing took 1.31077 seconds.
+	Netlist pre-processing took 1.28125 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 25.272 MB, end = 290.508 MB, delta = 265.236 MB
+	Netlist pre-processing peak virtual memory usage = 300.916 MB
+Netlist pre-processing resident set memory usage: begin = 38.552 MB, end = 294.36 MB, delta = 255.808 MB
+	Netlist pre-processing peak resident set memory usage = 304.652 MB
+***** Ending stage netlist pre-processing *****
+
+Load Global Network took 0.536501 seconds.
+	Load Global Network took 0.296875 seconds (approximately) in total CPU time.
+Load Global Network virtual memory usage: begin = 145.62 MB, end = 233.824 MB, delta = 88.204 MB
+	Load Global Network peak virtual memory usage = 300.916 MB
+Load Global Network resident set memory usage: begin = 153.144 MB, end = 223.136 MB, delta = 69.992 MB
+	Load Global Network peak resident set memory usage = 304.652 MB
+Reading C:/Efinity/2023.2/arch/.\rr_pb_hier_mapping.xml
+***** Beginning stage pre-packing ... *****
+***** Ending stage pre-packing *****
+
+***** Beginning stage packing ... *****
+Generate proto netlist for file "D:/FPGA_Edge_Detection/project/work_pnr\Ti60_Edge_Detection.net_proto" took 0.17 seconds
+Creating IO constraints file 'D:/FPGA_Edge_Detection/project/work_pnr\Ti60_Edge_Detection.io_place'
+Packing took 0.436778 seconds.
+	Packing took 0.4375 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 276.148 MB, end = 338.268 MB, delta = 62.12 MB
+	Packing peak virtual memory usage = 344.268 MB
+Packing resident set memory usage: begin = 264.264 MB, end = 324.108 MB, delta = 59.844 MB
+	Packing peak resident set memory usage = 329.06 MB
+***** Ending stage packing *****
+
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file D:/FPGA_Edge_Detection/project/work_pnr\Ti60_Edge_Detection.net_proto
+Read proto netlist for file "D:/FPGA_Edge_Detection/project/work_pnr\Ti60_Edge_Detection.net_proto" took 0.012 seconds
+Setup net and block data structure took 0.851 seconds
+Reading core interface constraints from 'D:/FPGA_Edge_Detection/project/outflow/Ti60_Edge_Detection.interface.csv'.
+Successfully processed interface constraints file "D:/FPGA_Edge_Detection/project/outflow/Ti60_Edge_Detection.interface.csv".
+Packed netlist loading took 5.42193 seconds.
+	Packed netlist loading took 14.5 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 338.268 MB, end = 813.396 MB, delta = 475.128 MB
+	Packed netlist loading peak virtual memory usage = 901.964 MB
+Packed netlist loading resident set memory usage: begin = 324.116 MB, end = 773.256 MB, delta = 449.14 MB
+	Packed netlist loading peak resident set memory usage = 866.584 MB
+***** Ending stage packed netlist loading *****
+
+***** Beginning stage pre-placement ... *****
+High resource utilization found. Software will optimize placement for routability.
+
+***** Ending stage pre-placement *****
+
+Read router lookahead for device Ti60F225 from file C:/Efinity/2023.2/arch/./troute/timing/titanium/lookahead/C4.lookahead.zst.
+
+Load Router Lookahead took 0.0385753 seconds.
+	Load Router Lookahead took 0.03125 seconds (approximately) in total CPU time.
+Load Router Lookahead virtual memory usage: begin = 938.088 MB, end = 947.376 MB, delta = 9.288 MB
+	Load Router Lookahead peak virtual memory usage = 975.12 MB
+Load Router Lookahead resident set memory usage: begin = 897.692 MB, end = 906.992 MB, delta = 9.3 MB
+	Load Router Lookahead peak resident set memory usage = 934.68 MB
+WARNING(1): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:14] No valid object(s) found for 'dsi_refclk_i'
+WARNING(2): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:14] No valid pin(s) found for clock
+WARNING(3): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:14] Unable to run 'create_clock' constraint due to warnings found
+WARNING(4): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:15] No valid object(s) found for 'dsi_byteclk_i'
+WARNING(5): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:15] No valid pin(s) found for clock
+WARNING(6): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:15] Unable to run 'create_clock' constraint due to warnings found
+WARNING(7): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:16] No valid object(s) found for 'dsi_txcclk_i'
+WARNING(8): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:16] No valid pin(s) found for clock
+WARNING(9): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:16] Unable to run 'create_clock' constraint due to warnings found
+WARNING(10): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:17] No valid object(s) found for 'dsi_serclk_i'
+WARNING(11): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:17] No valid pin(s) found for clock
+WARNING(12): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:17] Unable to run 'create_clock' constraint due to warnings found
+WARNING(13): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:23] No valid object(s) found for 'clk_pixel'
+WARNING(14): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:23] No valid pin(s) found for clock
+WARNING(15): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:23] Unable to run 'create_clock' constraint due to warnings found
+WARNING(16): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:26] No valid object(s) found for 'clk_lvds_1x'
+WARNING(17): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:26] No valid pin(s) found for clock
+WARNING(18): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:26] Unable to run 'create_clock' constraint due to warnings found
+WARNING(19): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:27] No valid object(s) found for 'clk_lvds_7x'
+WARNING(20): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:27] No valid pin(s) found for clock
+WARNING(21): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:27] Unable to run 'create_clock' constraint due to warnings found
+WARNING(22): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:28] No valid object(s) found for 'clk_27m'
+WARNING(23): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:28] No valid pin(s) found for clock
+WARNING(24): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:28] Unable to run 'create_clock' constraint due to warnings found
+WARNING(25): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:29] No valid object(s) found for 'clk_54m'
+WARNING(26): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:29] No valid pin(s) found for clock
+WARNING(27): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:29] Unable to run 'create_clock' constraint due to warnings found
+WARNING(28): No ports matched 'cmos_pclk'
+WARNING(29): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:31] No valid object(s) found for ''
+WARNING(30): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:31] No valid pin(s) found for clock
+WARNING(31): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:31] Unable to run 'create_clock' constraint due to warnings found
+WARNING(32): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:36] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(33): No clocks matched 'clk_pixel'
+WARNING(34): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:53] No valid object(s) found for ''
+WARNING(35): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:53] set_false_path: Object(s) specified for -to option contains no vaild endpoints
+WARNING(36): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:53] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(37): No clocks matched 'cmos_pclk'
+WARNING(38): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:55] No valid object(s) found for ''
+WARNING(39): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:55] set_false_path: Object(s) specified for -to option contains no vaild endpoints
+WARNING(40): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:55] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(41): No clocks matched 'dsi_byteclk_i'
+WARNING(42): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:56] No valid object(s) found for ''
+WARNING(43): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:56] set_false_path: Object(s) specified for -to option contains no vaild endpoints
+WARNING(44): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:56] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(45): No clocks matched 'clk_lvds_1x'
+WARNING(46): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:57] No valid object(s) found for ''
+WARNING(47): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:57] set_false_path: Object(s) specified for -to option contains no vaild endpoints
+WARNING(48): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:57] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(49): No clocks matched 'clk_lvds_1x'
+WARNING(50): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:60] No valid object(s) found for ''
+WARNING(51): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:60] set_false_path: Object(s) specified for -from option contains no vaild startpoints
+WARNING(52): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:60] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(53): No clocks matched 'clk_lvds_1x'
+WARNING(54): No clocks matched 'dsi_byteclk_i'
+WARNING(55): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:61] No valid object(s) found for ''
+WARNING(56): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:61] set_false_path: Object(s) specified for -from option contains no vaild startpoints
+WARNING(57): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:61] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(58): No clocks matched 'clk_pixel'
+WARNING(59): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:64] No valid object(s) found for ''
+WARNING(60): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:64] set_false_path: Object(s) specified for -from option contains no vaild startpoints
+WARNING(61): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:64] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(62): No clocks matched 'clk_pixel'
+WARNING(63): No clocks matched 'dsi_byteclk_i'
+WARNING(64): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:66] No valid object(s) found for ''
+WARNING(65): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:66] set_false_path: Object(s) specified for -from option contains no vaild startpoints
+WARNING(66): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:66] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(67): No clocks matched 'dsi_byteclk_i'
+WARNING(68): No clocks matched 'clk_lvds_1x'
+WARNING(69): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:72] No valid object(s) found for ''
+WARNING(70): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:72] set_false_path: Object(s) specified for -from option contains no vaild startpoints
+WARNING(71): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:72] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(72): No clocks matched 'dsi_byteclk_i'
+WARNING(73): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:73] No valid object(s) found for ''
+WARNING(74): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:73] set_false_path: Object(s) specified for -from option contains no vaild startpoints
+WARNING(75): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:73] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(76): No clocks matched 'dsi_byteclk_i'
+WARNING(77): No clocks matched 'clk_pixel'
+WARNING(78): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:74] No valid object(s) found for ''
+WARNING(79): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:74] set_false_path: Object(s) specified for -from option contains no vaild startpoints
+WARNING(80): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:74] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(81): No clocks matched 'cmos_pclk'
+WARNING(82): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:77] No valid object(s) found for ''
+WARNING(83): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:77] set_false_path: Object(s) specified for -from option contains no vaild startpoints
+WARNING(84): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:77] Unable to run 'set_false_path' constraint due to warnings found
+WARNING(85): No ports matched 'cmos_pclk~CLKOUT~4~1'
+WARNING(86): No ports matched 'cmos_data[0]'
+WARNING(87): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:97] No clocks matched 'cmos_pclk'
+WARNING(88): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:97] set_input_delay: No valid clock found for -clock
+WARNING(89): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:97] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(90): No ports matched 'cmos_pclk~CLKOUT~4~1'
+WARNING(91): No ports matched 'cmos_data[0]'
+WARNING(92): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:98] No clocks matched 'cmos_pclk'
+WARNING(93): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:98] set_input_delay: No valid clock found for -clock
+WARNING(94): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:98] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(95): No ports matched 'cmos_pclk~CLKOUT~6~1'
+WARNING(96): No ports matched 'cmos_data[1]'
+WARNING(97): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:99] No clocks matched 'cmos_pclk'
+WARNING(98): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:99] set_input_delay: No valid clock found for -clock
+WARNING(99): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:99] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(100): No ports matched 'cmos_pclk~CLKOUT~6~1'
+WARNING(101): No ports matched 'cmos_data[1]'
+WARNING(102): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:100] No clocks matched 'cmos_pclk'
+WARNING(103): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:100] set_input_delay: No valid clock found for -clock
+WARNING(104): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:100] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(105): No ports matched 'cmos_pclk~CLKOUT~12~322'
+WARNING(106): No ports matched 'cmos_data[2]'
+WARNING(107): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:101] No clocks matched 'cmos_pclk'
+WARNING(108): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:101] set_input_delay: No valid clock found for -clock
+WARNING(109): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:101] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(110): No ports matched 'cmos_pclk~CLKOUT~12~322'
+WARNING(111): No ports matched 'cmos_data[2]'
+WARNING(112): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:102] No clocks matched 'cmos_pclk'
+WARNING(113): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:102] set_input_delay: No valid clock found for -clock
+WARNING(114): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:102] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(115): No ports matched 'cmos_pclk~CLKOUT~214~322'
+WARNING(116): No ports matched 'cmos_data[3]'
+WARNING(117): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:103] No clocks matched 'cmos_pclk'
+WARNING(118): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:103] set_input_delay: No valid clock found for -clock
+WARNING(119): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:103] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(120): No ports matched 'cmos_pclk~CLKOUT~214~322'
+WARNING(121): No ports matched 'cmos_data[3]'
+WARNING(122): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:104] No clocks matched 'cmos_pclk'
+WARNING(123): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:104] set_input_delay: No valid clock found for -clock
+WARNING(124): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:104] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(125): No ports matched 'cmos_pclk~CLKOUT~4~322'
+WARNING(126): No ports matched 'cmos_data[4]'
+WARNING(127): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:105] No clocks matched 'cmos_pclk'
+WARNING(128): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:105] set_input_delay: No valid clock found for -clock
+WARNING(129): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:105] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(130): No ports matched 'cmos_pclk~CLKOUT~4~322'
+WARNING(131): No ports matched 'cmos_data[4]'
+WARNING(132): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:106] No clocks matched 'cmos_pclk'
+WARNING(133): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:106] set_input_delay: No valid clock found for -clock
+WARNING(134): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:106] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(135): No ports matched 'cmos_pclk~CLKOUT~212~322'
+WARNING(136): No ports matched 'cmos_data[5]'
+WARNING(137): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:107] No clocks matched 'cmos_pclk'
+WARNING(138): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:107] set_input_delay: No valid clock found for -clock
+WARNING(139): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:107] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(140): No ports matched 'cmos_pclk~CLKOUT~212~322'
+WARNING(141): No ports matched 'cmos_data[5]'
+WARNING(142): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:108] No clocks matched 'cmos_pclk'
+WARNING(143): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:108] set_input_delay: No valid clock found for -clock
+WARNING(144): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:108] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(145): No ports matched 'cmos_pclk~CLKOUT~10~322'
+WARNING(146): No ports matched 'cmos_data[6]'
+WARNING(147): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:109] No clocks matched 'cmos_pclk'
+WARNING(148): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:109] set_input_delay: No valid clock found for -clock
+WARNING(149): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:109] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(150): No ports matched 'cmos_pclk~CLKOUT~10~322'
+WARNING(151): No ports matched 'cmos_data[6]'
+WARNING(152): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:110] No clocks matched 'cmos_pclk'
+WARNING(153): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:110] set_input_delay: No valid clock found for -clock
+WARNING(154): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:110] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(155): No ports matched 'cmos_pclk~CLKOUT~197~322'
+WARNING(156): No ports matched 'cmos_data[7]'
+WARNING(157): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:111] No clocks matched 'cmos_pclk'
+WARNING(158): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:111] set_input_delay: No valid clock found for -clock
+WARNING(159): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:111] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(160): No ports matched 'cmos_pclk~CLKOUT~197~322'
+WARNING(161): No ports matched 'cmos_data[7]'
+WARNING(162): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:112] No clocks matched 'cmos_pclk'
+WARNING(163): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:112] set_input_delay: No valid clock found for -clock
+WARNING(164): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:112] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(165): No ports matched 'cmos_pclk~CLKOUT~216~322'
+WARNING(166): No ports matched 'cmos_href'
+WARNING(167): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:113] No clocks matched 'cmos_pclk'
+WARNING(168): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:113] set_input_delay: No valid clock found for -clock
+WARNING(169): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:113] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(170): No ports matched 'cmos_pclk~CLKOUT~216~322'
+WARNING(171): No ports matched 'cmos_href'
+WARNING(172): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:114] No clocks matched 'cmos_pclk'
+WARNING(173): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:114] set_input_delay: No valid clock found for -clock
+WARNING(174): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:114] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(175): No ports matched 'cmos_pclk~CLKOUT~18~322'
+WARNING(176): No ports matched 'cmos_vsync'
+WARNING(177): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:115] No clocks matched 'cmos_pclk'
+WARNING(178): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:115] set_input_delay: No valid clock found for -clock
+WARNING(179): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:115] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(180): No ports matched 'cmos_pclk~CLKOUT~18~322'
+WARNING(181): No ports matched 'cmos_vsync'
+WARNING(182): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:116] No clocks matched 'cmos_pclk'
+WARNING(183): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:116] set_input_delay: No valid clock found for -clock
+WARNING(184): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:116] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(185): No ports matched 'clk_lvds_1x~CLKOUT~39~322'
+WARNING(186): No ports matched 'lvds_txc_o[*]'
+WARNING(187): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:545] No clocks matched 'clk_lvds_1x'
+WARNING(188): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:545] set_output_delay: No valid clock found for -clock
+WARNING(189): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:545] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(190): No ports matched 'clk_lvds_1x~CLKOUT~39~322'
+WARNING(191): No ports matched 'lvds_txc_o[*]'
+WARNING(192): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:546] No clocks matched 'clk_lvds_1x'
+WARNING(193): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:546] set_output_delay: No valid clock found for -clock
+WARNING(194): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:546] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(195): No ports matched 'clk_lvds_1x~CLKOUT~39~322'
+WARNING(196): No ports matched 'lvds_txc_oe'
+WARNING(197): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:547] No clocks matched 'clk_lvds_1x'
+WARNING(198): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:547] set_output_delay: No valid clock found for -clock
+WARNING(199): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:547] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(200): No ports matched 'clk_lvds_1x~CLKOUT~39~322'
+WARNING(201): No ports matched 'lvds_txc_oe'
+WARNING(202): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:548] No clocks matched 'clk_lvds_1x'
+WARNING(203): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:548] set_output_delay: No valid clock found for -clock
+WARNING(204): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:548] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(205): No ports matched 'clk_lvds_1x~CLKOUT~163~322'
+WARNING(206): No ports matched 'lvds_txd0_o[*]'
+WARNING(207): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:549] No clocks matched 'clk_lvds_1x'
+WARNING(208): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:549] set_output_delay: No valid clock found for -clock
+WARNING(209): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:549] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(210): No ports matched 'clk_lvds_1x~CLKOUT~163~322'
+WARNING(211): No ports matched 'lvds_txd0_o[*]'
+WARNING(212): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:550] No clocks matched 'clk_lvds_1x'
+WARNING(213): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:550] set_output_delay: No valid clock found for -clock
+WARNING(214): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:550] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(215): No ports matched 'clk_lvds_1x~CLKOUT~163~322'
+WARNING(216): No ports matched 'lvds_txd0_oe'
+WARNING(217): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:551] No clocks matched 'clk_lvds_1x'
+WARNING(218): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:551] set_output_delay: No valid clock found for -clock
+WARNING(219): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:551] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(220): No ports matched 'clk_lvds_1x~CLKOUT~163~322'
+WARNING(221): No ports matched 'lvds_txd0_oe'
+WARNING(222): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:552] No clocks matched 'clk_lvds_1x'
+WARNING(223): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:552] set_output_delay: No valid clock found for -clock
+WARNING(224): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:552] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(225): No ports matched 'clk_lvds_1x~CLKOUT~155~322'
+WARNING(226): No ports matched 'lvds_txd1_o[*]'
+WARNING(227): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:553] No clocks matched 'clk_lvds_1x'
+WARNING(228): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:553] set_output_delay: No valid clock found for -clock
+WARNING(229): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:553] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(230): No ports matched 'clk_lvds_1x~CLKOUT~155~322'
+WARNING(231): No ports matched 'lvds_txd1_o[*]'
+WARNING(232): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:554] No clocks matched 'clk_lvds_1x'
+WARNING(233): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:554] set_output_delay: No valid clock found for -clock
+WARNING(234): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:554] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(235): No ports matched 'clk_lvds_1x~CLKOUT~155~322'
+WARNING(236): No ports matched 'lvds_txd1_oe'
+WARNING(237): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:555] No clocks matched 'clk_lvds_1x'
+WARNING(238): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:555] set_output_delay: No valid clock found for -clock
+WARNING(239): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:555] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(240): No ports matched 'clk_lvds_1x~CLKOUT~155~322'
+WARNING(241): No ports matched 'lvds_txd1_oe'
+WARNING(242): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:556] No clocks matched 'clk_lvds_1x'
+WARNING(243): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:556] set_output_delay: No valid clock found for -clock
+WARNING(244): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:556] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(245): No ports matched 'clk_lvds_1x~CLKOUT~71~322'
+WARNING(246): No ports matched 'lvds_txd2_o[*]'
+WARNING(247): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:557] No clocks matched 'clk_lvds_1x'
+WARNING(248): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:557] set_output_delay: No valid clock found for -clock
+WARNING(249): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:557] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(250): No ports matched 'clk_lvds_1x~CLKOUT~71~322'
+WARNING(251): No ports matched 'lvds_txd2_o[*]'
+WARNING(252): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:558] No clocks matched 'clk_lvds_1x'
+WARNING(253): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:558] set_output_delay: No valid clock found for -clock
+WARNING(254): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:558] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(255): No ports matched 'clk_lvds_1x~CLKOUT~71~322'
+WARNING(256): No ports matched 'lvds_txd2_oe'
+WARNING(257): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:559] No clocks matched 'clk_lvds_1x'
+WARNING(258): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:559] set_output_delay: No valid clock found for -clock
+WARNING(259): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:559] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(260): No ports matched 'clk_lvds_1x~CLKOUT~71~322'
+WARNING(261): No ports matched 'lvds_txd2_oe'
+WARNING(262): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:560] No clocks matched 'clk_lvds_1x'
+WARNING(263): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:560] set_output_delay: No valid clock found for -clock
+WARNING(264): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:560] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(265): No ports matched 'clk_lvds_1x~CLKOUT~171~322'
+WARNING(266): No ports matched 'lvds_txd3_o[*]'
+WARNING(267): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:561] No clocks matched 'clk_lvds_1x'
+WARNING(268): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:561] set_output_delay: No valid clock found for -clock
+WARNING(269): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:561] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(270): No ports matched 'clk_lvds_1x~CLKOUT~171~322'
+WARNING(271): No ports matched 'lvds_txd3_o[*]'
+WARNING(272): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:562] No clocks matched 'clk_lvds_1x'
+WARNING(273): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:562] set_output_delay: No valid clock found for -clock
+WARNING(274): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:562] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(275): No ports matched 'clk_lvds_1x~CLKOUT~171~322'
+WARNING(276): No ports matched 'lvds_txd3_oe'
+WARNING(277): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:563] No clocks matched 'clk_lvds_1x'
+WARNING(278): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:563] set_output_delay: No valid clock found for -clock
+WARNING(279): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:563] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(280): No ports matched 'clk_lvds_1x~CLKOUT~171~322'
+WARNING(281): No ports matched 'lvds_txd3_oe'
+WARNING(282): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:564] No clocks matched 'clk_lvds_1x'
+WARNING(283): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:564] set_output_delay: No valid clock found for -clock
+WARNING(284): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:564] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(285): No ports matched 'clk_lvds_1x~CLKOUT~39~322'
+WARNING(286): No ports matched 'lvds_txc_rst_o'
+WARNING(287): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:573] No clocks matched 'clk_lvds_1x'
+WARNING(288): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:573] set_output_delay: No valid clock found for -clock
+WARNING(289): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:573] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(290): No ports matched 'clk_lvds_1x~CLKOUT~39~322'
+WARNING(291): No ports matched 'lvds_txc_rst_o'
+WARNING(292): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:574] No clocks matched 'clk_lvds_1x'
+WARNING(293): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:574] set_output_delay: No valid clock found for -clock
+WARNING(294): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:574] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(295): No ports matched 'clk_lvds_1x~CLKOUT~163~322'
+WARNING(296): No ports matched 'lvds_txd0_rst_o'
+WARNING(297): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:575] No clocks matched 'clk_lvds_1x'
+WARNING(298): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:575] set_output_delay: No valid clock found for -clock
+WARNING(299): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:575] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(300): No ports matched 'clk_lvds_1x~CLKOUT~163~322'
+WARNING(301): No ports matched 'lvds_txd0_rst_o'
+WARNING(302): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:576] No clocks matched 'clk_lvds_1x'
+WARNING(303): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:576] set_output_delay: No valid clock found for -clock
+WARNING(304): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:576] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(305): No ports matched 'clk_lvds_1x~CLKOUT~155~322'
+WARNING(306): No ports matched 'lvds_txd1_rst_o'
+WARNING(307): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:577] No clocks matched 'clk_lvds_1x'
+WARNING(308): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:577] set_output_delay: No valid clock found for -clock
+WARNING(309): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:577] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(310): No ports matched 'clk_lvds_1x~CLKOUT~155~322'
+WARNING(311): No ports matched 'lvds_txd1_rst_o'
+WARNING(312): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:578] No clocks matched 'clk_lvds_1x'
+WARNING(313): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:578] set_output_delay: No valid clock found for -clock
+WARNING(314): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:578] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(315): No ports matched 'clk_lvds_1x~CLKOUT~71~322'
+WARNING(316): No ports matched 'lvds_txd2_rst_o'
+WARNING(317): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:579] No clocks matched 'clk_lvds_1x'
+WARNING(318): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:579] set_output_delay: No valid clock found for -clock
+WARNING(319): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:579] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(320): No ports matched 'clk_lvds_1x~CLKOUT~71~322'
+WARNING(321): No ports matched 'lvds_txd2_rst_o'
+WARNING(322): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:580] No clocks matched 'clk_lvds_1x'
+WARNING(323): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:580] set_output_delay: No valid clock found for -clock
+WARNING(324): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:580] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(325): No ports matched 'clk_lvds_1x~CLKOUT~171~322'
+WARNING(326): No ports matched 'lvds_txd3_rst_o'
+WARNING(327): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:581] No clocks matched 'clk_lvds_1x'
+WARNING(328): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:581] set_output_delay: No valid clock found for -clock
+WARNING(329): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:581] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(330): No ports matched 'clk_lvds_1x~CLKOUT~171~322'
+WARNING(331): No ports matched 'lvds_txd3_rst_o'
+WARNING(332): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:582] No clocks matched 'clk_lvds_1x'
+WARNING(333): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:582] set_output_delay: No valid clock found for -clock
+WARNING(334): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:582] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(335): No ports matched 'dsi_byteclk_i~CLKOUT~218~200'
+WARNING(336): No ports matched 'dsi_txc_hs_o[*]'
+WARNING(337): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:606] No clocks matched 'dsi_byteclk_i'
+WARNING(338): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:606] set_output_delay: No valid clock found for -clock
+WARNING(339): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:606] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(340): No ports matched 'dsi_byteclk_i~CLKOUT~218~200'
+WARNING(341): No ports matched 'dsi_txc_hs_o[*]'
+WARNING(342): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:607] No clocks matched 'dsi_byteclk_i'
+WARNING(343): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:607] set_output_delay: No valid clock found for -clock
+WARNING(344): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:607] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(345): No ports matched 'dsi_byteclk_i~CLKOUT~218~200'
+WARNING(346): No ports matched 'dsi_txc_rst_o'
+WARNING(347): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:608] No clocks matched 'dsi_byteclk_i'
+WARNING(348): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:608] set_output_delay: No valid clock found for -clock
+WARNING(349): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:608] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(350): No ports matched 'dsi_byteclk_i~CLKOUT~218~200'
+WARNING(351): No ports matched 'dsi_txc_rst_o'
+WARNING(352): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:609] No clocks matched 'dsi_byteclk_i'
+WARNING(353): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:609] set_output_delay: No valid clock found for -clock
+WARNING(354): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:609] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(355): No ports matched 'dsi_byteclk_i~CLKOUT~218~187'
+WARNING(356): No ports matched 'dsi_txd0_hs_o[*]'
+WARNING(357): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:610] No clocks matched 'dsi_byteclk_i'
+WARNING(358): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:610] set_output_delay: No valid clock found for -clock
+WARNING(359): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:610] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(360): No ports matched 'dsi_byteclk_i~CLKOUT~218~187'
+WARNING(361): No ports matched 'dsi_txd0_hs_o[*]'
+WARNING(362): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:611] No clocks matched 'dsi_byteclk_i'
+WARNING(363): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:611] set_output_delay: No valid clock found for -clock
+WARNING(364): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:611] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(365): No ports matched 'dsi_byteclk_i~CLKOUT~218~187'
+WARNING(366): No ports matched 'dsi_txd0_rst_o'
+WARNING(367): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:612] No clocks matched 'dsi_byteclk_i'
+WARNING(368): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:612] set_output_delay: No valid clock found for -clock
+WARNING(369): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:612] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(370): No ports matched 'dsi_byteclk_i~CLKOUT~218~187'
+WARNING(371): No ports matched 'dsi_txd0_rst_o'
+WARNING(372): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:613] No clocks matched 'dsi_byteclk_i'
+WARNING(373): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:613] set_output_delay: No valid clock found for -clock
+WARNING(374): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:613] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(375): No ports matched 'dsi_byteclk_i~CLKOUT~218~215'
+WARNING(376): No ports matched 'dsi_txd1_hs_o[*]'
+WARNING(377): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:614] No clocks matched 'dsi_byteclk_i'
+WARNING(378): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:614] set_output_delay: No valid clock found for -clock
+WARNING(379): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:614] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(380): No ports matched 'dsi_byteclk_i~CLKOUT~218~215'
+WARNING(381): No ports matched 'dsi_txd1_hs_o[*]'
+WARNING(382): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:615] No clocks matched 'dsi_byteclk_i'
+WARNING(383): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:615] set_output_delay: No valid clock found for -clock
+WARNING(384): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:615] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(385): No ports matched 'dsi_byteclk_i~CLKOUT~218~215'
+WARNING(386): No ports matched 'dsi_txd1_rst_o'
+WARNING(387): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:616] No clocks matched 'dsi_byteclk_i'
+WARNING(388): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:616] set_output_delay: No valid clock found for -clock
+WARNING(389): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:616] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(390): No ports matched 'dsi_byteclk_i~CLKOUT~218~215'
+WARNING(391): No ports matched 'dsi_txd1_rst_o'
+WARNING(392): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:617] No clocks matched 'dsi_byteclk_i'
+WARNING(393): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:617] set_output_delay: No valid clock found for -clock
+WARNING(394): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:617] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(395): No ports matched 'dsi_byteclk_i~CLKOUT~218~230'
+WARNING(396): No ports matched 'dsi_txd2_hs_o[*]'
+WARNING(397): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:618] No clocks matched 'dsi_byteclk_i'
+WARNING(398): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:618] set_output_delay: No valid clock found for -clock
+WARNING(399): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:618] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(400): No ports matched 'dsi_byteclk_i~CLKOUT~218~230'
+WARNING(401): No ports matched 'dsi_txd2_hs_o[*]'
+WARNING(402): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:619] No clocks matched 'dsi_byteclk_i'
+WARNING(403): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:619] set_output_delay: No valid clock found for -clock
+WARNING(404): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:619] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(405): No ports matched 'dsi_byteclk_i~CLKOUT~218~230'
+WARNING(406): No ports matched 'dsi_txd2_rst_o'
+WARNING(407): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:620] No clocks matched 'dsi_byteclk_i'
+WARNING(408): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:620] set_output_delay: No valid clock found for -clock
+WARNING(409): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:620] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(410): No ports matched 'dsi_byteclk_i~CLKOUT~218~230'
+WARNING(411): No ports matched 'dsi_txd2_rst_o'
+WARNING(412): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:621] No clocks matched 'dsi_byteclk_i'
+WARNING(413): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:621] set_output_delay: No valid clock found for -clock
+WARNING(414): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:621] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(415): No ports matched 'dsi_byteclk_i~CLKOUT~218~175'
+WARNING(416): No ports matched 'dsi_txd3_hs_o[*]'
+WARNING(417): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:622] No clocks matched 'dsi_byteclk_i'
+WARNING(418): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:622] set_output_delay: No valid clock found for -clock
+WARNING(419): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:622] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(420): No ports matched 'dsi_byteclk_i~CLKOUT~218~175'
+WARNING(421): No ports matched 'dsi_txd3_hs_o[*]'
+WARNING(422): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:623] No clocks matched 'dsi_byteclk_i'
+WARNING(423): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:623] set_output_delay: No valid clock found for -clock
+WARNING(424): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:623] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(425): No ports matched 'dsi_byteclk_i~CLKOUT~218~175'
+WARNING(426): No ports matched 'dsi_txd3_rst_o'
+WARNING(427): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:624] No clocks matched 'dsi_byteclk_i'
+WARNING(428): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:624] set_output_delay: No valid clock found for -clock
+WARNING(429): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:624] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING(430): No ports matched 'dsi_byteclk_i~CLKOUT~218~175'
+WARNING(431): No ports matched 'dsi_txd3_rst_o'
+WARNING(432): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:625] No clocks matched 'dsi_byteclk_i'
+WARNING(433): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:625] set_output_delay: No valid clock found for -clock
+WARNING(434): [SDC D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc:625] Unable to run 'set_output_delay' constraint due to warnings found
+
+SDC file 'D:/FPGA_Edge_Detection/project/Ti60_Edge_Detection.pt.sdc' parsed successfully.
+8 clocks (including virtual clocks), 68 inputs and 142 outputs were constrained.
+
+***** Beginning stage initial placement ... *****
+Reading core interface constraints from 'D:/FPGA_Edge_Detection/project/outflow/Ti60_Edge_Detection.interface.csv'.
+Successfully processed interface constraints file "D:/FPGA_Edge_Detection/project/outflow/Ti60_Edge_Detection.interface.csv".
+Writing IO placement constraints to 'D:/FPGA_Edge_Detection/project/outflow\Ti60_Edge_Detection.interface.io'.
+
+Reading placement constraints from 'D:/FPGA_Edge_Detection/project/outflow\Ti60_Edge_Detection.interface.io'.
+
+Reading placement constraints from 'D:/FPGA_Edge_Detection/project/work_pnr\Ti60_Edge_Detection.io_place'.
+***** Ending stage initial placement *****
+
+***** Beginning stage placement ... *****
+Found 162 synchronizers as follows: 
+	Synchronizer 0:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i23_2
+	Synchronizer 1:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i22_2
+	Synchronizer 2:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i21_2
+	Synchronizer 3:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i41_2
+	Synchronizer 4:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/pushToPopGray_buffercc/buffers_0[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/pushToPopGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 5:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/dq_pipe_ap[3]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/dq_pipe_ap[4]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/dq_pipe_ap[5]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/dq_pipe_ap[6]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/dq_pipe_ap[7]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/dq_pipe_ap[8]~FF
+	Synchronizer 6:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/popToPushGray_buffercc/buffers_0[1]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/popToPushGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 7:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/popToPushGray_buffercc/buffers_0[4]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/popToPushGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 8:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/popToPushGray_buffercc/buffers_0[2]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/popToPushGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 9:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/popToPushGray_buffercc/buffers_0[5]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/popToPushGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 10:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/popToPushGray_buffercc/buffers_0[6]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/popToPushGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 11:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/popToPushGray_buffercc/buffers_0[2]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/popToPushGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 12:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/popToPushGray_buffercc/buffers_0[3]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/popToPushGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 13:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/pushToPopGray_buffercc/buffers_0[4]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/pushToPopGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 14:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i13_2
+	Synchronizer 15:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/popToPushGray_buffercc/buffers_0[1]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/popToPushGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 16:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i12_2
+	Synchronizer 17:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/dff_9/i2_2
+	Synchronizer 18:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/popToPushGray_buffercc/buffers_0[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/popToPushGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 19:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i19_2
+	Synchronizer 20:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/popToPushGray_buffercc/buffers_0[3]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/popToPushGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 21:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/pushToPopGray_buffercc/buffers_0[3]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/pushToPopGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 22:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i18_2
+	Synchronizer 23:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/pushToPopGray_buffercc/buffers_0[5]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/pushToPopGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 24:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/popToPushGray_buffercc/buffers_0[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/popToPushGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 25:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/pushToPopGray_buffercc/buffers_0[2]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/pushToPopGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 26:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/ram_wr_ack_p1~FF
+	Synchronizer 27:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i14_2
+	Synchronizer 28:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/pushToPopGray_buffercc/buffers_0[1]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/pushToPopGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 29:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/ram_wr_ack_p~FF
+	Synchronizer 30:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i13_2
+	Synchronizer 31:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/pushToPopGray_buffercc/buffers_0[6]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/pushToPopGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 32:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i12_2
+	Synchronizer 33:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/pushToPopGray_buffercc/buffers_0[5]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/pushToPopGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 34:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/popToPushGray_buffercc/buffers_0[4]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/popToPushGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 35:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i38_2
+	Synchronizer 36:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i11_2
+	Synchronizer 37:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/pushToPopGray_buffercc/buffers_0[4]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/pushToPopGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 38:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/popToPushGray_buffercc/buffers_0[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/popToPushGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 39:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/popToPushGray_buffercc/buffers_0[1]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/popToPushGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 40:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/pushToPopGray_buffercc/buffers_0[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/pushToPopGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 41:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/ram_rd_ack_a[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/ram_rd_ack_a[1]~FF
+	Synchronizer 42:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i30_2
+	Synchronizer 43:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/pushToPopGray_buffercc/buffers_0[3]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/pushToPopGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 44:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/popToPushGray_buffercc/buffers_0[5]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/popToPushGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 45:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/pushToPopGray_buffercc/buffers_0[2]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/pushToPopGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 46:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/pushToPopGray_buffercc/buffers_0[1]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/pushToPopGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 47:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/popToPushGray_buffercc/buffers_0[6]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/popToPushGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 48:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/popToPushGray_buffercc/buffers_0[5]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/popToPushGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 49:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/popToPushGray_buffercc/buffers_0[4]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/popToPushGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 50:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/pushToPopGray_buffercc/buffers_0[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/pushToPopGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 51:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/dff_11/i2_2
+	Synchronizer 52:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/popToPushGray_buffercc/buffers_0[3]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/popToPushGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 53:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/pushToPopGray_buffercc/buffers_0[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/pushToPopGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 54:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/pushToPopGray_buffercc/buffers_0[5]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/pushToPopGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 55:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/popToPushGray_buffercc/buffers_0[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/popToPushGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 56:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/get_dqs_wr_start_p[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/get_dqs_wr_start_p[1]~FF
+	Synchronizer 57:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/pushToPopGray_buffercc/buffers_0[6]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/pushToPopGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 58:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/genblk2.rd_rst[0]~FF u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/genblk2.rd_rst[1]~FF
+	Synchronizer 59:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/pushToPopGray_buffercc/buffers_0[1]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/pushToPopGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 60:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/r_wr_start_p[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/r_wr_start_p[1]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/r_wr_start_p[2]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/r_wr_start_p[3]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/r_wr_start_p[4]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/r_wr_start_p[5]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/r_wr_start_p[6]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/r_wr_start_p[7]~FF
+	Synchronizer 61:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/genblk2.wr_rst[0]~FF u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/genblk2.wr_rst[1]~FF
+	Synchronizer 62:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/popToPushGray_buffercc/buffers_0[1]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/popToPushGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 63:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/pushToPopGray_buffercc/buffers_0[2]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/pushToPopGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 64:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/popToPushGray_buffercc/buffers_0[2]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/popToPushGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 65:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/pushToPopGray_buffercc/buffers_0[3]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/pushToPopGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 66:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/popToPushGray_buffercc/buffers_0[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/popToPushGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 67:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/popToPushGray_buffercc/buffers_0[3]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/popToPushGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 68:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/pushToPopGray_buffercc/buffers_0[4]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/pushToPopGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 69:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/popToPushGray_buffercc/buffers_0[4]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/popToPushGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 70:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/pushToPopGray_buffercc/buffers_0[5]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/pushToPopGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 71:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/ram_rd_ack_ap[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/ram_rd_ack_ap[1]~FF
+	Synchronizer 72:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/popToPushGray_buffercc/buffers_0[5]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/popToPushGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 73:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/pushToPopGray_buffercc/buffers_0[6]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/pushToPopGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 74:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/popToPushGray_buffercc/buffers_0[1]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/popToPushGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 75:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/popToPushGray_buffercc/buffers_0[6]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/popToPushGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 76:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/popToPushGray_buffercc/buffers_0[2]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/popToPushGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 77:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/popToPushGray_buffercc/buffers_0[6]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/popToPushGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 78:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/pushToPopGray_buffercc/buffers_0[1]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/pushToPopGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 79:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/pushToPopGray_buffercc/buffers_0[2]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/pushToPopGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 80:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/pushToPopGray_buffercc/buffers_0[3]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/pushToPopGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 81:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/pushToPopGray_buffercc/buffers_0[4]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rdpush/pushToPopGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 82:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i15_2
+	Synchronizer 83:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i16_2
+	Synchronizer 84:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i17_2
+	Synchronizer 85:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/popToPushGray_buffercc/buffers_0[2]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/popToPushGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 86:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i14_2
+	Synchronizer 87:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/popToPushGray_buffercc/buffers_0[4]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/popToPushGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 88:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i16_2
+	Synchronizer 89:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/popToPushGray_buffercc/buffers_0[5]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/popToPushGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 90:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i17_2
+	Synchronizer 91:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/popToPushGray_buffercc/buffers_0[6]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/popToPushGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 92:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i18_2
+	Synchronizer 93:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i19_2
+	Synchronizer 94:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i20_2
+	Synchronizer 95:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/popToPushGray_buffercc/buffers_0[1]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/popToPushGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 96:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/popToPushGray_buffercc/buffers_0[2]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/popToPushGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 97:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/popToPushGray_buffercc/buffers_0[3]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/popToPushGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 98:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/popToPushGray_buffercc/buffers_0[4]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/popToPushGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 99:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/popToPushGray_buffercc/buffers_0[5]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/popToPushGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 100:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/popToPushGray_buffercc/buffers_0[6]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/popToPushGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 101:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/pushToPopGray_buffercc/buffers_0[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/pushToPopGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 102:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/pushToPopGray_buffercc/buffers_0[1]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/pushToPopGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 103:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/pushToPopGray_buffercc/buffers_0[2]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/pushToPopGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 104:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/pushToPopGray_buffercc/buffers_0[3]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/pushToPopGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 105:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i24_2
+	Synchronizer 106:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/pushToPopGray_buffercc/buffers_0[4]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/pushToPopGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 107:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i25_2
+	Synchronizer 108:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/pushToPopGray_buffercc/buffers_0[5]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/pushToPopGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 109:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i26_2
+	Synchronizer 110:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/pushToPopGray_buffercc/buffers_0[6]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/pushToPopGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 111:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i27_2
+	Synchronizer 112:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/get_wr_ack[2]~FF
+	Synchronizer 113:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/dq_pipe_ap[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/dq_pipe_ap[1]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/w_wr_fifo_rd_en~FF
+	Synchronizer 114:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/get_dqs_wr_start_p[2]~FF
+	Synchronizer 115:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/get_wr_ack[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/get_wr_ack[1]~FF
+	Synchronizer 116:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i28_2
+	Synchronizer 117:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i29_2
+	Synchronizer 118:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/ram_rd_ack_ap[2]~FF
+	Synchronizer 119:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/pushToPopGray_buffercc/buffers_0[6]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/pushToPopGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 120:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/genblk2.rd_rst[0]~FF u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/genblk2.rd_rst[1]~FF
+	Synchronizer 121:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/genblk2.wr_rst[0]~FF u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/genblk2.wr_rst[1]~FF
+	Synchronizer 122:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/popToPushGray_buffercc/buffers_0[3]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/popToPushGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 123:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i15_2
+	Synchronizer 124:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i11_2
+	Synchronizer 125:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i30_2
+	Synchronizer 126:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/popToPushGray_buffercc/buffers_0[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/popToPushGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 127:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i21_2
+	Synchronizer 128:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i22_2
+	Synchronizer 129:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i23_2
+	Synchronizer 130:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i24_2
+	Synchronizer 131:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i25_2
+	Synchronizer 132:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i26_2
+	Synchronizer 133:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/pushToPopGray_buffercc/buffers_0[0]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/pushToPopGray_buffercc_io_dataOut[0]~FF
+	Synchronizer 134:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i27_2
+	Synchronizer 135:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i28_2
+	Synchronizer 136:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i29_2
+	Synchronizer 137:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/pushToPopGray_buffercc/buffers_0[1]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/pushToPopGray_buffercc_io_dataOut[1]~FF
+	Synchronizer 138:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i20_2
+	Synchronizer 139:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/pushToPopGray_buffercc/buffers_0[2]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/pushToPopGray_buffercc_io_dataOut[2]~FF
+	Synchronizer 140:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i36_2
+	Synchronizer 141:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/pushToPopGray_buffercc/buffers_0[3]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/pushToPopGray_buffercc_io_dataOut[3]~FF
+	Synchronizer 142:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i27_2
+	Synchronizer 143:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/pushToPopGray_buffercc/buffers_0[4]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/pushToPopGray_buffercc_io_dataOut[4]~FF
+	Synchronizer 144:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i28_2
+	Synchronizer 145:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/pushToPopGray_buffercc/buffers_0[5]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/pushToPopGray_buffercc_io_dataOut[5]~FF
+	Synchronizer 146:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i29_2
+	Synchronizer 147:  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/pushToPopGray_buffercc/buffers_0[6]~FF ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/pushToPopGray_buffercc_io_dataOut[6]~FF
+	Synchronizer 148:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i30_2
+	Synchronizer 149:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i31_2
+	Synchronizer 150:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i32_2
+	Synchronizer 151:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i33_2
+	Synchronizer 152:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i35_2
+	Synchronizer 153:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i42_2
+	Synchronizer 154:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i33_2
+	Synchronizer 155:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i34_2
+	Synchronizer 156:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i35_2
+	Synchronizer 157:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i36_2
+	Synchronizer 158:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i37_2
+	Synchronizer 159:  u_axi4_ctrl/Gen_FIFO_W32.u_W0_FIFO_32/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/dff_5/i34_2
+	Synchronizer 160:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i39_2
+	Synchronizer 161:  u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/dff_5/i40_2
+Create D:/FPGA_Edge_Detection/project/outflow\Ti60_Edge_Detection_after_qp.qdelay
+QPLACER STATIC DB USAGE DISABLED
+Starting Global Placer with 32 threads ...
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL Worst Slack (ps) Convergence
+ ----------     -------  --------------     -------
+          1    55006204             195         1.0%
+          2    37859944             228         2.0%
+          3    21196662             246         4.8%
+          4    11659259              68        11.0%
+          5     8402696              21        17.6%
+          6     6889475             -54        23.8%
+          7     5936024              32        30.1%
+          8     5438559             -27        34.9%
+          9     5205682              32        36.5%
+         10     5104047              75        38.0%
+         11     4960799             106        39.2%
+         12     4965732              75        40.3%
+         13     4836675             -26        42.1%
+         14     4659571              75        44.8%
+         15     4626321             -26        47.2%
+         16     4506670              -1        49.3%
+         17     4483022               1        49.9%
+         18     4342919              21        51.7%
+         19     4577179              35        51.7%
+         20     4449876             -14        52.3%
+         21     4333908            -122        54.3%
+         22     4289391            -201        56.1%
+         23     4227052            -245        58.3%
+         24     4438536            -229        58.3%
+         25     3973646            -216        63.6%
+         26     3959828            -125        64.0%
+         27     3928771             -73        64.8%
+         28     3904729             -95        65.9%
+         29     3861984             -75        68.0%
+         30     3839958             -94        69.8%
+         31     3791268              -4        71.5%
+         32     3753824             -92        73.7%
+         33     3742234            -116        75.0%
+         34     3777069            -106        76.3%
+         35     3735322            -118        78.2%
+         36     3728664            -161        79.6%
+         37     3701854            -156        81.0%
+         38     3693189            -152        82.2%
+         39     3686299            -156        83.3%
+         40     3683594            -185        84.4%
+         41     3681560            -185        85.6%
+         42     3698007            -161        86.3%
+         43     3710560            -189        87.2%
+         44     3726411            -183        88.1%
+         45     3760146            -183        88.7%
+         46     3766952            -202        90.0%
+         47     3802491            -233        90.0%
+         48     3823004            -193        90.5%
+         49     3842768            -188        90.8%
+         50     3849052            -167        91.3%
+         51     3871045            -206        91.7%
+         52     3897122            -199        92.3%
+         53     3929355            -200        92.8%
+         54     3618506            -177        93.9%
+         55     3628542            -205        96.3%
+         56     3646420            -210        97.3%
+         57     3657970            -219        97.6%
+         58     3666439            -210        98.0%
+         59     3676762            -210        98.2%
+         60     3686784            -210        98.7%
+Starting Annealer
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0     3618505            2716        30.0
+          1     4829090            7251        29.0
+          2     6807865            7210        27.7
+          3     6350565            7131        26.2
+          4     5951466            6728        24.7
+          5     5678708            6690        23.1
+          6     5442606            6613        21.7
+          7     5248103            6639        20.2
+          8     5065603            6643        18.8
+          9     4931825            6637        17.4
+         10     4784125            6611        16.2
+         11     4657177             481        14.9
+         12     4526852            6551        13.8
+         13     4426782             481        12.7
+         14     4309625             481        11.6
+         15     4229994             481        10.7
+         16     4141768             483         9.8
+         17     4064863             483         8.9
+         18     3977945             483         8.1
+         19     3915675             483         7.4
+         20     3843505             483         6.7
+         21     3784424             483         6.1
+         22     3729967             483         5.5
+         23     3678736             483         5.0
+         24     3630743             483         4.5
+         25     3588475             483         4.1
+         26     3551678             483         3.7
+         27     3523697             483         3.3
+         28     3500870             483         3.0
+         29     3481396             483         2.7
+         30     3462326             483         2.4
+         31     3446936             483         2.2
+         32     3434383             483         1.9
+         33     3420353             483         1.7
+         34     3408751             483         1.6
+         35     3396490             483         1.4
+         36     3384188             483         1.3
+         37     3374705             483         1.1
+         38     3364616             483         1.0
+         39     3353388             483         1.0
+         40     3337255             483         1.0
+Generate D:/FPGA_Edge_Detection/project/outflow\Ti60_Edge_Detection_after_qp.qdelay
+Placement successful: 57041 cells are placed
+Peak congestion smeared over 1/4 of the chip is 1.18195 at 198,139
+Congestion-weighted HPWL per net: 47.6062
+
+Reading placement constraints from 'D:/FPGA_Edge_Detection/project/outflow/Ti60_Edge_Detection.qplace'.
+Finished Realigning Types (13148 blocks needed type change)
+Run checks after placement.
+
+Completed placement consistency check successfully.
+Successfully created FPGA place file 'D:/FPGA_Edge_Detection/project/outflow/Ti60_Edge_Detection.place'
+Placement took 605.11 seconds.
+	Placement took 1373.91 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 947.376 MB, end = 1178.56 MB, delta = 231.188 MB
+	Placement peak virtual memory usage = 5895.85 MB
+Placement resident set memory usage: begin = 906.996 MB, end = 1106.15 MB, delta = 199.152 MB
+	Placement peak resident set memory usage = 5745.98 MB
+***** Ending stage placement *****
+
